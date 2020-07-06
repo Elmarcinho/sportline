@@ -1,0 +1,8 @@
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\bin\Release\Proyecto.Datos.dll.config
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\bin\Release\Proyecto.Datos.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\bin\Release\Proyecto.Datos.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\bin\Release\EntityFramework.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\bin\Release\EntityFramework.xml
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\obj\Release\Proyecto.Datos.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\obj\Release\Proyecto.Datos.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\obj\Release\Proyecto.Datos.csprojResolveAssemblyReference.cache

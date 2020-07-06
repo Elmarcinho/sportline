@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2a00d1b24cb5462281f3fa37c164a6a4" Name="Diagram1">
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Año" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Asistencia" Width="1.5" PointX="10.5" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.BitacoraLogin" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.BitacoraSolicitudVenta" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Categoria" Width="1.5" PointX="6.75" PointY="17.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Ciudad" Width="1.5" PointX="1.5" PointY="20.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Cliente" Width="1.5" PointX="6" PointY="20.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Credito" Width="1.5" PointX="10.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Cuota" Width="1.5" PointX="12.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Descuento" Width="1.5" PointX="6" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.DetalleSolicitud" Width="1.5" PointX="13.5" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.DetalleSolicitudCompra" Width="1.5" PointX="10.5" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Empleado" Width="1.5" PointX="13.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Factura" Width="1.5" PointX="18" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Horario" Width="1.5" PointX="15.5" PointY="6.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Mes" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Pago" Width="1.5" PointX="15.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Permiso" Width="1.5" PointX="0.75" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Persona" Width="1.5" PointX="3.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Plazo" Width="1.5" PointX="6" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Precio" Width="1.5" PointX="11.25" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Producto" Width="1.5" PointX="9" PointY="17.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Rol" Width="1.5" PointX="0.75" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.RolPermiso" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Servicio" Width="1.5" PointX="9" PointY="20.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Solicitud" Width="1.5" PointX="8.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.SolicitudCompra" Width="1.5" PointX="8.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Sucursal" Width="1.5" PointX="1.5" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.TipoSolicitud" Width="1.5" PointX="6" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Turno" Width="1.5" PointX="13.25" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Usuario" Width="1.5" PointX="6" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.Zona" Width="1.5" PointX="1.5" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VCategoria" Width="1.5" PointX="4.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClienteAsistencia" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClienteCreditoGeneral" Width="1.5" PointX="8.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClienteDetalleCredito" Width="1.5" PointX="15.75" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClienteGeneral" Width="1.5" PointX="13.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClientePagoServicio" Width="1.5" PointX="15.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClientes" Width="1.5" PointX="17.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClienteServicio" Width="1.5" PointX="10.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClienteSolicitudDetalleGeneral" Width="1.5" PointX="17.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClienteSolicitudDiario" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClienteSolicitudGeneral" Width="1.5" PointX="17.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClienteSolicitudGeneralConsolidado" Width="1.5" PointX="19.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VClienteSolicitudServicioPlanes" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VCumpleañeros" Width="1.5" PointX="19.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VCumpleañerosFoto" Width="1.5" PointX="19.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VCumpleañerosGral" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VDescuento" Width="1.5" PointX="12.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VDetalleSolicitudProducto" Width="1.5" PointX="13.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VDetalleSolicitudProductoServicio" Width="1.5" PointX="21.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VDetalleSolicitudServicio" Width="1.5" PointX="21.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VDetalleSolicitudServicioPago" Width="1.5" PointX="21.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VEmpleados" Width="1.5" PointX="21.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VEmpleadosActivoSinUser" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VFacturaGeneral" Width="1.5" PointX="0.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VHorarioServicioEstadoPlan" Width="1.5" PointX="2.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VIngresoGeneral" Width="1.5" PointX="4.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VIngresoGeneralConsolidado" Width="1.5" PointX="23.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VPermiso" Width="1.5" PointX="6.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VProducto" Width="1.5" PointX="23.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VProductoInventarioDiario" Width="1.5" PointX="23.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VRol" Width="1.5" PointX="23.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VRolPermiso" Width="1.5" PointX="15.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VServicioActivo" Width="1.5" PointX="17.75" PointY="23.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VSolicitudGeneral" Width="1.5" PointX="23.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VSolicitudGeneralAño" Width="1.5" PointX="23.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VSolicitudGeneralConsolidado" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VSolicitudGeneralMes" Width="1.5" PointX="6.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VSolicitudProducto" Width="1.5" PointX="8.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VSolicitudProductoGeneral" Width="1.5" PointX="10.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VSolicitudServicio" Width="1.5" PointX="12.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VSolicitudServicioCredito" Width="1.5" PointX="19.75" PointY="24.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VSolicitudServicioPago" Width="1.5" PointX="25.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VUsuario" Width="1.5" PointX="25.75" PointY="8.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VUsuarioActivo" Width="1.5" PointX="25.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbGimnasioSportLineModel.VUsuarioRolPermisos" Width="1.5" PointX="25.75" PointY="16.75" IsExpanded="true" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Asistenci__IdSol__5DCAEF64" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Producto__IdCate__38996AB5" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Zona__IdCiudad__145C0A3F" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Cliente__IdPerso__1BFD2C07" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Credito__IdSolic__693CA210" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Cuota__IdCredito__6C190EBB" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Solicitud__IdDes__4E88ABD4" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__DetalleSo__IdPre__534D60F1" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__DetalleSo__IdSol__52593CB8" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FKDetalleSolicitud" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__DetalleSo__IdPre__76969D2E" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__DetalleSo__IdSol__75A278F5" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Empleado__IdPers__1ED998B2" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Horario__IdEmple__6383C8BA" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Factura__IdPago__5AEE82B9" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Factura__IdSolic__59FA5E80" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Horario__IdClien__6477ECF3" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Horario__IdServi__628FA481" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Horario__IdSolic__656C112C" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Horario__IdTurno__66603565" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__RolPermis__IdPer__300424B4" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Persona__IdSucur__1920BF5C" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Persona__IdZona__182C9B23" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Solicitud__IdCli__4AB81AF0" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Solicitud__IdEmp__4BAC3F29" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Usuario__IdPerso__286302EC" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Solicitud__IdPla__4D94879B" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Precio__IdProduc__3F466844" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Precio__IdServic__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__RolPermis__IdRol__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Usuario__IdRol__29572725" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Solicitud__IdTip__4CA06362" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Solicitud__IdUsu__4F7CD00D" ManuallyRouted="false" />
+        <AssociationConnector Association="dbGimnasioSportLineModel.FK__Solicitud__IdUsu__72C60C4A" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

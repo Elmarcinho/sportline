@@ -1,0 +1,1810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dbGimnasioSportLineModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Año">
+    <Key>
+      <PropertyRef Name="IdAño" />
+    </Key>
+    <Property Name="IdAño" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreAño" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Asistencia">
+    <Key>
+      <PropertyRef Name="IdAsistencia" />
+    </Key>
+    <Property Name="IdAsistencia" Type="Int64" Nullable="false" />
+    <Property Name="FechaAsistencia" Type="DateTime" Precision="3" />
+    <Property Name="FechaRenovacion" Type="DateTime" Precision="3" />
+    <Property Name="Valor" Type="Int32" />
+    <Property Name="IdSolicitud" Type="Int64" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK__Asistenci__IdSol__5DCAEF64" FromRole="Asistencia" ToRole="Solicitud" />
+  </EntityType>
+  <EntityType Name="BitacoraLogin">
+    <Key>
+      <PropertyRef Name="IdBitLogin" />
+    </Key>
+    <Property Name="IdBitLogin" Type="Int64" Nullable="false" />
+    <Property Name="NombreEmpleado" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="0" />
+    <Property Name="HoraIngreso" Type="Time" Precision="7" />
+    <Property Name="HoraSalida" Type="Time" Precision="7" />
+  </EntityType>
+  <EntityType Name="BitacoraSolicitudVenta">
+    <Key>
+      <PropertyRef Name="IdBitSol" />
+    </Key>
+    <Property Name="IdBitSol" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreOperacion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="FechaOperacion" Type="DateTime" Precision="3" />
+    <Property Name="IdSolicitud" Type="Int64" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Categoria">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+    </Key>
+    <Property Name="IdCategoria" Type="Int64" Nullable="false" />
+    <Property Name="NombreCategoria" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EstadoCategoria" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Producto__IdCate__38996AB5" FromRole="Categoria" ToRole="Producto" />
+  </EntityType>
+  <EntityType Name="Ciudad">
+    <Key>
+      <PropertyRef Name="IdCiudad" />
+    </Key>
+    <Property Name="IdCiudad" Type="Int64" Nullable="false" />
+    <Property Name="NombreCiudad" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Zona" Relationship="Self.FK__Zona__IdCiudad__145C0A3F" FromRole="Ciudad" ToRole="Zona" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="IdPersona" />
+    </Key>
+    <Property Name="IdPersona" Type="Int64" Nullable="false" />
+    <Property Name="Nit" Type="Int64" />
+    <Property Name="Peso" Type="Double" />
+    <Property Name="Estatura" Type="Double" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Cliente__IdPerso__1BFD2C07" FromRole="Cliente" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="Credito">
+    <Key>
+      <PropertyRef Name="IdCredito" />
+    </Key>
+    <Property Name="IdCredito" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaCredito" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FechaPlazo" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Monto" Type="Double" Nullable="false" />
+    <Property Name="IdSolicitud" Type="Int64" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK__Credito__IdSolic__693CA210" FromRole="Credito" ToRole="Solicitud" />
+    <NavigationProperty Name="Cuota" Relationship="Self.FK__Cuota__IdCredito__6C190EBB" FromRole="Credito" ToRole="Cuota" />
+  </EntityType>
+  <EntityType Name="Cuota">
+    <Key>
+      <PropertyRef Name="IdCuota" />
+    </Key>
+    <Property Name="IdCuota" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MontoCuota" Type="Double" Nullable="false" />
+    <Property Name="FechaPago" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IdCredito" Type="Int64" />
+    <NavigationProperty Name="Credito" Relationship="Self.FK__Cuota__IdCredito__6C190EBB" FromRole="Cuota" ToRole="Credito" />
+  </EntityType>
+  <EntityType Name="Descuento">
+    <Key>
+      <PropertyRef Name="IdDescuento" />
+    </Key>
+    <Property Name="IdDescuento" Type="Int64" Nullable="false" />
+    <Property Name="NombreDescuento" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Monto" Type="Double" Nullable="false" />
+    <Property Name="EstadoDescuento" Type="Int32" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK__Solicitud__IdDes__4E88ABD4" FromRole="Descuento" ToRole="Solicitud" />
+  </EntityType>
+  <EntityType Name="DetalleSolicitud">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="IdPrecio" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdPrecio" Type="Int64" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Precio" Relationship="Self.FK__DetalleSo__IdPre__534D60F1" FromRole="DetalleSolicitud" ToRole="Precio" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK__DetalleSo__IdSol__52593CB8" FromRole="DetalleSolicitud" ToRole="Solicitud" />
+    <NavigationProperty Name="Pago" Relationship="Self.FKDetalleSolicitud" FromRole="DetalleSolicitud" ToRole="Pago" />
+  </EntityType>
+  <EntityType Name="DetalleSolicitudCompra">
+    <Key>
+      <PropertyRef Name="IdSolicitudCompra" />
+      <PropertyRef Name="IdPrecio" />
+    </Key>
+    <Property Name="IdSolicitudCompra" Type="Int64" Nullable="false" />
+    <Property Name="IdPrecio" Type="Int64" Nullable="false" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Precio" Relationship="Self.FK__DetalleSo__IdPre__76969D2E" FromRole="DetalleSolicitudCompra" ToRole="Precio" />
+    <NavigationProperty Name="SolicitudCompra" Relationship="Self.FK__DetalleSo__IdSol__75A278F5" FromRole="DetalleSolicitudCompra" ToRole="SolicitudCompra" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="IdPersona" />
+    </Key>
+    <Property Name="IdPersona" Type="Int64" Nullable="false" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="0" />
+    <Property Name="EstadoEmpleado" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Empleado__IdPers__1ED998B2" FromRole="Empleado" ToRole="Persona" />
+    <NavigationProperty Name="Horario" Relationship="Self.FK__Horario__IdEmple__6383C8BA" FromRole="Empleado" ToRole="Horario" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="IdFactura" />
+    </Key>
+    <Property Name="IdFactura" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Nit" Type="Int64" />
+    <Property Name="FechaFactura" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="CodigoAutorizacion" Type="Int64" Nullable="false" />
+    <Property Name="CodigoControl" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaLimiteEmision" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="CodigoQR" Type="Binary" MaxLength="Max" FixedLength="false" Nullable="false" />
+    <Property Name="Monto" Type="Double" Nullable="false" />
+    <Property Name="IdSolicitud" Type="Int64" />
+    <Property Name="IdPago" Type="Int64" />
+    <NavigationProperty Name="Pago" Relationship="Self.FK__Factura__IdPago__5AEE82B9" FromRole="Factura" ToRole="Pago" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK__Factura__IdSolic__59FA5E80" FromRole="Factura" ToRole="Solicitud" />
+  </EntityType>
+  <EntityType Name="Horario">
+    <Key>
+      <PropertyRef Name="IdHorario" />
+    </Key>
+    <Property Name="IdHorario" Type="Int64" Nullable="false" />
+    <Property Name="HoraInicio" Type="Time" Precision="7" />
+    <Property Name="HoraFin" Type="Time" Precision="7" />
+    <Property Name="RangoDia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IdServicio" Type="Int64" />
+    <Property Name="IdEmpleado" Type="Int64" />
+    <Property Name="IdCliente" Type="Int64" />
+    <Property Name="IdSolicitud" Type="Int64" />
+    <Property Name="IdTurno" Type="Int64" />
+    <NavigationProperty Name="Empleado" Relationship="Self.FK__Horario__IdEmple__6383C8BA" FromRole="Horario" ToRole="Empleado" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Horario__IdClien__6477ECF3" FromRole="Horario" ToRole="Persona" />
+    <NavigationProperty Name="Servicio" Relationship="Self.FK__Horario__IdServi__628FA481" FromRole="Horario" ToRole="Servicio" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK__Horario__IdSolic__656C112C" FromRole="Horario" ToRole="Solicitud" />
+    <NavigationProperty Name="Turno" Relationship="Self.FK__Horario__IdTurno__66603565" FromRole="Horario" ToRole="Turno" />
+  </EntityType>
+  <EntityType Name="Mes">
+    <Key>
+      <PropertyRef Name="IdMes" />
+    </Key>
+    <Property Name="IdMes" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NombreMes" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Pago">
+    <Key>
+      <PropertyRef Name="IdPago" />
+    </Key>
+    <Property Name="IdPago" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FechaPago" Type="DateTime" Precision="0" />
+    <Property Name="Descuento" Type="Double" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="Monto" Type="Double" />
+    <Property Name="EstadoPago" Type="Int32" Nullable="false" />
+    <Property Name="IdSolicitud" Type="Int64" />
+    <Property Name="IdPrecio" Type="Int64" />
+    <NavigationProperty Name="DetalleSolicitud" Relationship="Self.FKDetalleSolicitud" FromRole="Pago" ToRole="DetalleSolicitud" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IdPago__5AEE82B9" FromRole="Pago" ToRole="Factura" />
+  </EntityType>
+  <EntityType Name="Permiso">
+    <Key>
+      <PropertyRef Name="IdPermiso" />
+    </Key>
+    <Property Name="IdPermiso" Type="Int64" Nullable="false" />
+    <Property Name="NombrePermiso" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EstadoPermiso" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RolPermiso" Relationship="Self.FK__RolPermis__IdPer__300424B4" FromRole="Permiso" ToRole="RolPermiso" />
+  </EntityType>
+  <EntityType Name="Persona">
+    <Key>
+      <PropertyRef Name="IdPersona" />
+    </Key>
+    <Property Name="IdPersona" Type="Int64" Nullable="false" />
+    <Property Name="NombrePersona" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="DocumentoIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="Sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="CorreoElectronico" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IdZona" Type="Int64" />
+    <Property Name="IdSucursal" Type="Int64" />
+    <NavigationProperty Name="Cliente" Relationship="Self.FK__Cliente__IdPerso__1BFD2C07" FromRole="Persona" ToRole="Cliente" />
+    <NavigationProperty Name="Empleado" Relationship="Self.FK__Empleado__IdPers__1ED998B2" FromRole="Persona" ToRole="Empleado" />
+    <NavigationProperty Name="Horario" Relationship="Self.FK__Horario__IdClien__6477ECF3" FromRole="Persona" ToRole="Horario" />
+    <NavigationProperty Name="Sucursal" Relationship="Self.FK__Persona__IdSucur__1920BF5C" FromRole="Persona" ToRole="Sucursal" />
+    <NavigationProperty Name="Zona" Relationship="Self.FK__Persona__IdZona__182C9B23" FromRole="Persona" ToRole="Zona" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK__Solicitud__IdCli__4AB81AF0" FromRole="Persona" ToRole="Solicitud" />
+    <NavigationProperty Name="Solicitud1" Relationship="Self.FK__Solicitud__IdEmp__4BAC3F29" FromRole="Persona" ToRole="Solicitud" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Usuario__IdPerso__286302EC" FromRole="Persona" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Plazo">
+    <Key>
+      <PropertyRef Name="IdPlazo" />
+    </Key>
+    <Property Name="IdPlazo" Type="Int64" Nullable="false" />
+    <Property Name="NombrePlazo" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Numerodias" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK__Solicitud__IdPla__4D94879B" FromRole="Plazo" ToRole="Solicitud" />
+  </EntityType>
+  <EntityType Name="Precio">
+    <Key>
+      <PropertyRef Name="IdPrecio" />
+    </Key>
+    <Property Name="IdPrecio" Type="Int64" Nullable="false" />
+    <Property Name="PrecioCompra" Type="Double" />
+    <Property Name="PrecioVenta" Type="Double" />
+    <Property Name="PrecioDiario" Type="Double" />
+    <Property Name="PrecioQuincenal" Type="Double" />
+    <Property Name="PrecioMensual" Type="Double" />
+    <Property Name="FechaInicial" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FechaFinal" Type="DateTime" Precision="0" />
+    <Property Name="IdProducto" Type="Int64" />
+    <Property Name="IdServicio" Type="Int64" />
+    <Property Name="EstadoPrecio" Type="Int32" />
+    <NavigationProperty Name="DetalleSolicitud" Relationship="Self.FK__DetalleSo__IdPre__534D60F1" FromRole="Precio" ToRole="DetalleSolicitud" />
+    <NavigationProperty Name="DetalleSolicitudCompra" Relationship="Self.FK__DetalleSo__IdPre__76969D2E" FromRole="Precio" ToRole="DetalleSolicitudCompra" />
+    <NavigationProperty Name="Producto" Relationship="Self.FK__Precio__IdProduc__3F466844" FromRole="Precio" ToRole="Producto" />
+    <NavigationProperty Name="Servicio" Relationship="Self.FK__Precio__IdServic__403A8C7D" FromRole="Precio" ToRole="Servicio" />
+  </EntityType>
+  <EntityType Name="Producto">
+    <Key>
+      <PropertyRef Name="IdProducto" />
+    </Key>
+    <Property Name="IdProducto" Type="Int64" Nullable="false" />
+    <Property Name="NombreProducto" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DescripcionProducto" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Stock" Type="Int32" Nullable="false" />
+    <Property Name="IdCategoria" Type="Int64" />
+    <Property Name="EstadoProducto" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Categoria" Relationship="Self.FK__Producto__IdCate__38996AB5" FromRole="Producto" ToRole="Categoria" />
+    <NavigationProperty Name="Precio" Relationship="Self.FK__Precio__IdProduc__3F466844" FromRole="Producto" ToRole="Precio" />
+  </EntityType>
+  <EntityType Name="Rol">
+    <Key>
+      <PropertyRef Name="IdRol" />
+    </Key>
+    <Property Name="IdRol" Type="Int64" Nullable="false" />
+    <Property Name="NombreRol" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="110" FixedLength="false" Unicode="false" />
+    <Property Name="EstadoRol" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="RolPermiso" Relationship="Self.FK__RolPermis__IdRol__2F10007B" FromRole="Rol" ToRole="RolPermiso" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Usuario__IdRol__29572725" FromRole="Rol" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="RolPermiso">
+    <Key>
+      <PropertyRef Name="IdRol" />
+      <PropertyRef Name="IdPermiso" />
+    </Key>
+    <Property Name="IdRol" Type="Int64" Nullable="false" />
+    <Property Name="IdPermiso" Type="Int64" Nullable="false" />
+    <Property Name="EstadoRolPermiso" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Permiso" Relationship="Self.FK__RolPermis__IdPer__300424B4" FromRole="RolPermiso" ToRole="Permiso" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK__RolPermis__IdRol__2F10007B" FromRole="RolPermiso" ToRole="Rol" />
+  </EntityType>
+  <EntityType Name="Servicio">
+    <Key>
+      <PropertyRef Name="IdServicio" />
+    </Key>
+    <Property Name="IdServicio" Type="Int64" Nullable="false" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="HoraInicio" Type="Time" Precision="7" />
+    <Property Name="HoraFin" Type="Time" Precision="7" />
+    <Property Name="RangoDia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="EstadoServicio" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Horario" Relationship="Self.FK__Horario__IdServi__628FA481" FromRole="Servicio" ToRole="Horario" />
+    <NavigationProperty Name="Precio" Relationship="Self.FK__Precio__IdServic__403A8C7D" FromRole="Servicio" ToRole="Precio" />
+  </EntityType>
+  <EntityType Name="Solicitud">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="0" />
+    <Property Name="FechaCulminacion" Type="DateTime" Precision="0" />
+    <Property Name="EstadoSolicitud" Type="Int32" Nullable="false" />
+    <Property Name="TipoPago" Type="Int32" />
+    <Property Name="IdCliente" Type="Int64" />
+    <Property Name="IdEmpleado" Type="Int64" />
+    <Property Name="IdTipoSolicitud" Type="Int64" />
+    <Property Name="IdPlazo" Type="Int64" />
+    <Property Name="IdDescuento" Type="Int64" />
+    <Property Name="IdUsuario" Type="Int64" />
+    <NavigationProperty Name="Asistencia" Relationship="Self.FK__Asistenci__IdSol__5DCAEF64" FromRole="Solicitud" ToRole="Asistencia" />
+    <NavigationProperty Name="Credito" Relationship="Self.FK__Credito__IdSolic__693CA210" FromRole="Solicitud" ToRole="Credito" />
+    <NavigationProperty Name="Descuento" Relationship="Self.FK__Solicitud__IdDes__4E88ABD4" FromRole="Solicitud" ToRole="Descuento" />
+    <NavigationProperty Name="DetalleSolicitud" Relationship="Self.FK__DetalleSo__IdSol__52593CB8" FromRole="Solicitud" ToRole="DetalleSolicitud" />
+    <NavigationProperty Name="Factura" Relationship="Self.FK__Factura__IdSolic__59FA5E80" FromRole="Solicitud" ToRole="Factura" />
+    <NavigationProperty Name="Horario" Relationship="Self.FK__Horario__IdSolic__656C112C" FromRole="Solicitud" ToRole="Horario" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Solicitud__IdCli__4AB81AF0" FromRole="Solicitud" ToRole="Persona" />
+    <NavigationProperty Name="Persona1" Relationship="Self.FK__Solicitud__IdEmp__4BAC3F29" FromRole="Solicitud" ToRole="Persona" />
+    <NavigationProperty Name="Plazo" Relationship="Self.FK__Solicitud__IdPla__4D94879B" FromRole="Solicitud" ToRole="Plazo" />
+    <NavigationProperty Name="TipoSolicitud" Relationship="Self.FK__Solicitud__IdTip__4CA06362" FromRole="Solicitud" ToRole="TipoSolicitud" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Solicitud__IdUsu__4F7CD00D" FromRole="Solicitud" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="SolicitudCompra">
+    <Key>
+      <PropertyRef Name="IdSolicitudCompra" />
+    </Key>
+    <Property Name="IdSolicitudCompra" Type="Int64" Nullable="false" />
+    <Property Name="FechaCompra" Type="DateTime" Precision="0" />
+    <Property Name="IdUsuario" Type="Int64" />
+    <NavigationProperty Name="DetalleSolicitudCompra" Relationship="Self.FK__DetalleSo__IdSol__75A278F5" FromRole="SolicitudCompra" ToRole="DetalleSolicitudCompra" />
+    <NavigationProperty Name="Usuario" Relationship="Self.FK__Solicitud__IdUsu__72C60C4A" FromRole="SolicitudCompra" ToRole="Usuario" />
+  </EntityType>
+  <EntityType Name="Sucursal">
+    <Key>
+      <PropertyRef Name="IdSucursal" />
+    </Key>
+    <Property Name="IdSucursal" Type="Int64" Nullable="false" />
+    <Property Name="NombreSucursal" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Persona__IdSucur__1920BF5C" FromRole="Sucursal" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="TipoSolicitud">
+    <Key>
+      <PropertyRef Name="IdTipoSolicitud" />
+    </Key>
+    <Property Name="IdTipoSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="NombreTipoSolicitud" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK__Solicitud__IdTip__4CA06362" FromRole="TipoSolicitud" ToRole="Solicitud" />
+  </EntityType>
+  <EntityType Name="Turno">
+    <Key>
+      <PropertyRef Name="IdTurno" />
+    </Key>
+    <Property Name="IdTurno" Type="Int64" Nullable="false" />
+    <Property Name="NombreTurno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Horario" Relationship="Self.FK__Horario__IdTurno__66603565" FromRole="Turno" ToRole="Horario" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="IdUsuario" />
+    </Key>
+    <Property Name="IdUsuario" Type="Int64" Nullable="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="130" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdPersona" Type="Int64" Nullable="false" />
+    <Property Name="EstadoUsuario" Type="Int32" />
+    <Property Name="IdRol" Type="Int64" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Usuario__IdPerso__286302EC" FromRole="Usuario" ToRole="Persona" />
+    <NavigationProperty Name="Rol" Relationship="Self.FK__Usuario__IdRol__29572725" FromRole="Usuario" ToRole="Rol" />
+    <NavigationProperty Name="Solicitud" Relationship="Self.FK__Solicitud__IdUsu__4F7CD00D" FromRole="Usuario" ToRole="Solicitud" />
+    <NavigationProperty Name="SolicitudCompra" Relationship="Self.FK__Solicitud__IdUsu__72C60C4A" FromRole="Usuario" ToRole="SolicitudCompra" />
+  </EntityType>
+  <EntityType Name="Zona">
+    <Key>
+      <PropertyRef Name="IdZona" />
+    </Key>
+    <Property Name="IdZona" Type="Int64" Nullable="false" />
+    <Property Name="NombreZona" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="IdCiudad" Type="Int64" />
+    <NavigationProperty Name="Ciudad" Relationship="Self.FK__Zona__IdCiudad__145C0A3F" FromRole="Zona" ToRole="Ciudad" />
+    <NavigationProperty Name="Persona" Relationship="Self.FK__Persona__IdZona__182C9B23" FromRole="Zona" ToRole="Persona" />
+  </EntityType>
+  <EntityType Name="VCategoria">
+    <Key>
+      <PropertyRef Name="IdCategoria" />
+      <PropertyRef Name="NombreCategoria" />
+      <PropertyRef Name="Estado" />
+    </Key>
+    <Property Name="IdCategoria" Type="Int64" Nullable="false" />
+    <Property Name="NombreCategoria" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VClienteAsistencia">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="IdAsistencia" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IdAsistencia" Type="Int64" Nullable="false" />
+    <Property Name="FechaAsistencia" Type="DateTime" Precision="3" />
+    <Property Name="FechaRenovacion" Type="DateTime" Precision="3" />
+    <Property Name="Valor" Type="Int32" />
+  </EntityType>
+  <EntityType Name="VClienteCreditoGeneral">
+    <Key>
+      <PropertyRef Name="CodVenta" />
+      <PropertyRef Name="CodCrédito" />
+      <PropertyRef Name="CodCliente" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="FechaCredito" />
+      <PropertyRef Name="FechaPlazo" />
+      <PropertyRef Name="MontoCrédito" />
+    </Key>
+    <Property Name="CodVenta" Type="Int64" Nullable="false" />
+    <Property Name="CodCrédito" Type="Int64" Nullable="false" />
+    <Property Name="CodCliente" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="FechaCredito" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FechaPlazo" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="MontoCrédito" Type="Double" Nullable="false" />
+    <Property Name="MontoCuota" Type="Double" />
+    <Property Name="Saldo" Type="Double" />
+  </EntityType>
+  <EntityType Name="VClienteDetalleCredito">
+    <Key>
+      <PropertyRef Name="CodVenta" />
+      <PropertyRef Name="CodCrédito" />
+      <PropertyRef Name="CodCliente" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="FechaCredito" />
+      <PropertyRef Name="NombreProducto" />
+      <PropertyRef Name="Cantidad" />
+    </Key>
+    <Property Name="CodVenta" Type="Int64" Nullable="false" />
+    <Property Name="CodCrédito" Type="Int64" Nullable="false" />
+    <Property Name="CodCliente" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="FechaCredito" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NombreProducto" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PrecioVenta" Type="Double" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Double" />
+  </EntityType>
+  <EntityType Name="VClienteGeneral">
+    <Key>
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="NombrePersona" />
+      <PropertyRef Name="ApellidoPaterno" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="Sexo" />
+    </Key>
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="NombrePersona" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="Teléfono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="direccion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Zona" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Sucursal" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VClientePagoServicio">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="IdPago" />
+      <PropertyRef Name="NombreServicio" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdPago" Type="Int64" Nullable="false" />
+    <Property Name="FechaPago" Type="DateTime" Precision="0" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Precio" Type="Double" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="SubTotal" Type="Double" />
+    <Property Name="Descuento" Type="Double" />
+    <Property Name="MontoPago" Type="Double" />
+  </EntityType>
+  <EntityType Name="VClientes">
+    <Key>
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="NombrePersona" />
+      <PropertyRef Name="ApellidoPaterno" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="Sexo" />
+    </Key>
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="NombrePersona" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="Teléfono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="CorreoElectronico" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Peso" Type="Double" />
+    <Property Name="Estatura" Type="Double" />
+    <Property Name="direccion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Zona" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Ciudad" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="Sucursal" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VClienteServicio">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="IdServicio" />
+      <PropertyRef Name="NombreServicio" />
+      <PropertyRef Name="IdPrecio" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdPlazo" Type="Int64" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="IdServicio" Type="Int64" Nullable="false" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdPrecio" Type="Int64" Nullable="false" />
+    <Property Name="Precio" Type="Double" />
+  </EntityType>
+  <EntityType Name="VClienteSolicitudDetalleGeneral">
+    <Key>
+      <PropertyRef Name="FechaSolicitud" />
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="IdServicio" />
+      <PropertyRef Name="NombreServicio" />
+      <PropertyRef Name="Cantidad" />
+      <PropertyRef Name="Monto" />
+    </Key>
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdServicio" Type="Int64" Nullable="false" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Descripciones" Type="String" MaxLength="183" FixedLength="false" Unicode="false" />
+    <Property Name="PrecioVenta" Type="Double" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="SubTotal" Type="Double" />
+    <Property Name="Monto" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VClienteSolicitudDiario">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="NombreServicio" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="FechaSolicitud" Type="DateTime" Precision="0" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Total" Type="Double" />
+  </EntityType>
+  <EntityType Name="VClienteSolicitudGeneral">
+    <Key>
+      <PropertyRef Name="CodVenta" />
+      <PropertyRef Name="CodCliente" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="FechaSolicitud" />
+      <PropertyRef Name="Estado" />
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="TipoPago" />
+      <PropertyRef Name="Usuario" />
+      <PropertyRef Name="MontoDescuento" />
+    </Key>
+    <Property Name="CodVenta" Type="Int64" Nullable="false" />
+    <Property Name="CodCliente" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoPago" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SubTotal" Type="Double" />
+    <Property Name="MontoDescuento" Type="Double" Nullable="false" />
+    <Property Name="MontoTotal" Type="Double" />
+  </EntityType>
+  <EntityType Name="VClienteSolicitudGeneralConsolidado">
+    <Key>
+      <PropertyRef Name="CodVenta" />
+      <PropertyRef Name="CodCliente" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="Estado" />
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="TipoPago" />
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="CodVenta" Type="Int64" Nullable="false" />
+    <Property Name="CodCliente" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="FechaSolicitud" Type="DateTime" Precision="0" />
+    <Property Name="IdMes" Type="Int32" />
+    <Property Name="MesSolicitud" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="AñoSolicitud" Type="Int32" />
+    <Property Name="Estado" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoPago" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SubTotal" Type="Double" />
+    <Property Name="MontoDescuento" Type="Double" />
+    <Property Name="MontoTotal" Type="Double" />
+  </EntityType>
+  <EntityType Name="VClienteSolicitudServicioPlanes">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="FechaSolicitud" />
+      <PropertyRef Name="Planes" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Planes" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VCumpleañeros">
+    <Key>
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="CédulaIdentidad" />
+    </Key>
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="Dia" Type="Int32" />
+    <Property Name="Mes" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="VCumpleañerosFoto">
+    <Key>
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="CédulaIdentidad" />
+    </Key>
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="Dia" Type="Int32" />
+    <Property Name="Mes" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="VCumpleañerosGral">
+    <Key>
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="CédulaIdentidad" />
+    </Key>
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="Dia" Type="Int32" />
+    <Property Name="Mes" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VDescuento">
+    <Key>
+      <PropertyRef Name="IdDescuento" />
+      <PropertyRef Name="NombreDescuento" />
+      <PropertyRef Name="Monto" />
+      <PropertyRef Name="Estado" />
+    </Key>
+    <Property Name="IdDescuento" Type="Int64" Nullable="false" />
+    <Property Name="NombreDescuento" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Monto" Type="Double" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VDetalleSolicitudProducto">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="IdProducto" />
+      <PropertyRef Name="NombreProducto" />
+      <PropertyRef Name="IdPrecio" />
+      <PropertyRef Name="Cantidad" />
+      <PropertyRef Name="Stock" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdProducto" Type="Int64" Nullable="false" />
+    <Property Name="NombreProducto" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DescripcionProducto" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="IdPrecio" Type="Int64" Nullable="false" />
+    <Property Name="PrecioVenta" Type="Double" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="Stock" Type="Int32" Nullable="false" />
+    <Property Name="Total" Type="Double" />
+  </EntityType>
+  <EntityType Name="VDetalleSolicitudProductoServicio">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="IdServicio" />
+      <PropertyRef Name="NombreServicio" />
+      <PropertyRef Name="Cantidad" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdServicio" Type="Int64" Nullable="false" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="IdPlazo" Type="Int64" />
+    <Property Name="PrecioVenta" Type="Double" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="SubTotal" Type="Double" />
+  </EntityType>
+  <EntityType Name="VDetalleSolicitudServicio">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="IdServicio" />
+      <PropertyRef Name="NombreServicio" />
+      <PropertyRef Name="IdPrecio" />
+      <PropertyRef Name="Cantidad" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdServicio" Type="Int64" Nullable="false" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="IdPlazo" Type="Int64" />
+    <Property Name="IdPrecio" Type="Int64" Nullable="false" />
+    <Property Name="PrecioDiario" Type="Double" />
+    <Property Name="PrecioQuincenal" Type="Double" />
+    <Property Name="PrecioMensual" Type="Double" />
+    <Property Name="Cantidad" Type="Int32" Nullable="false" />
+    <Property Name="SubTotal" Type="Double" />
+  </EntityType>
+  <EntityType Name="VDetalleSolicitudServicioPago">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="IdPago" />
+      <PropertyRef Name="IdServicio" />
+      <PropertyRef Name="NombreServicio" />
+      <PropertyRef Name="IdPrecio" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdPago" Type="Int64" Nullable="false" />
+    <Property Name="IdServicio" Type="Int64" Nullable="false" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="IdPlazo" Type="Int64" />
+    <Property Name="IdPrecio" Type="Int64" Nullable="false" />
+    <Property Name="PrecioDiario" Type="Double" />
+    <Property Name="PrecioQuincenal" Type="Double" />
+    <Property Name="PrecioMensual" Type="Double" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="SubTotal" Type="Double" />
+    <Property Name="MontoDescuento" Type="Double" />
+  </EntityType>
+  <EntityType Name="VEmpleados">
+    <Key>
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="NombrePersona" />
+      <PropertyRef Name="ApellidoPaterno" />
+      <PropertyRef Name="CédulaIdentidad" />
+      <PropertyRef Name="Sexo" />
+    </Key>
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreEmpleado" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="NombrePersona" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoPaterno" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ApellidoMaterno" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="CédulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="Teléfono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="0" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Dirección" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Zona" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="NombreCiudad" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="NombreSucursal" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VEmpleadosActivoSinUser">
+    <Key>
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="CedulaIdentidad" />
+      <PropertyRef Name="Sexo" />
+    </Key>
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreEmpleado" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="CedulaIdentidad" Type="Int64" Nullable="false" />
+    <Property Name="Teléfono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="FechaIngreso" Type="DateTime" Precision="0" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="Dirección" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="Zona" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="NombreCiudad" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="NombreSucursal" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VFacturaGeneral">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="IdFactura" />
+      <PropertyRef Name="CodigoAutorizacion" />
+      <PropertyRef Name="FechaFactura" />
+      <PropertyRef Name="Carnet" />
+      <PropertyRef Name="CodigoControl" />
+      <PropertyRef Name="TipoPago" />
+      <PropertyRef Name="NombreServicio" />
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdFactura" Type="Int64" Nullable="false" />
+    <Property Name="CodigoAutorizacion" Type="Int64" Nullable="false" />
+    <Property Name="FechaFactura" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="Carnet" Type="Int64" Nullable="false" />
+    <Property Name="CodigoControl" Type="String" MaxLength="14" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="FechaLimiteEmision" Type="DateTime" Precision="0" />
+    <Property Name="QR" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="TipoPago" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PrecioVenta" Type="Double" />
+    <Property Name="Cantidad" Type="Int32" />
+    <Property Name="SubTotal" Type="Double" />
+    <Property Name="MontoDescuento" Type="Double" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VHorarioServicioEstadoPlan">
+    <Key>
+      <PropertyRef Name="IdHorario" />
+      <PropertyRef Name="NombreTurno" />
+      <PropertyRef Name="NombreServicio" />
+      <PropertyRef Name="EstadoPlan" />
+    </Key>
+    <Property Name="IdHorario" Type="Int64" Nullable="false" />
+    <Property Name="HoraInicio" Type="Time" Precision="7" />
+    <Property Name="HoraFin" Type="Time" Precision="7" />
+    <Property Name="RangoDia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="IdServicio" Type="Int64" />
+    <Property Name="IdEmpleado" Type="Int64" />
+    <Property Name="IdCliente" Type="Int64" />
+    <Property Name="IdSolicitud" Type="Int64" />
+    <Property Name="IdTurno" Type="Int64" />
+    <Property Name="NombreTurno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EstadoPlan" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VIngresoGeneral">
+    <Key>
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="IdSolicitud" />
+    </Key>
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="Monto" Type="Double" />
+  </EntityType>
+  <EntityType Name="VIngresoGeneralConsolidado">
+    <Key>
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="IdSolicitud" />
+    </Key>
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="NombreCliente" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <Property Name="Monto" Type="Double" />
+  </EntityType>
+  <EntityType Name="VPermiso">
+    <Key>
+      <PropertyRef Name="IdPermiso" />
+      <PropertyRef Name="NombrePermiso" />
+      <PropertyRef Name="Estado" />
+    </Key>
+    <Property Name="IdPermiso" Type="Int64" Nullable="false" />
+    <Property Name="NombrePermiso" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VProducto">
+    <Key>
+      <PropertyRef Name="IdProducto" />
+      <PropertyRef Name="NombreProducto" />
+      <PropertyRef Name="IdPrecio" />
+      <PropertyRef Name="Stock" />
+      <PropertyRef Name="IdCategoria" />
+      <PropertyRef Name="NombreCategoria" />
+      <PropertyRef Name="Estado" />
+    </Key>
+    <Property Name="IdProducto" Type="Int64" Nullable="false" />
+    <Property Name="NombreProducto" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="DescripcionProducto" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="IdPrecio" Type="Int64" Nullable="false" />
+    <Property Name="PrecioCompra" Type="Double" />
+    <Property Name="PrecioVenta" Type="Double" />
+    <Property Name="Stock" Type="Int32" Nullable="false" />
+    <Property Name="IdCategoria" Type="Int64" Nullable="false" />
+    <Property Name="NombreCategoria" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VProductoInventarioDiario">
+    <Key>
+      <PropertyRef Name="FechaSolicitud" />
+      <PropertyRef Name="NombreCategoria" />
+      <PropertyRef Name="IdProducto" />
+      <PropertyRef Name="NombreProducto" />
+      <PropertyRef Name="Stock" />
+    </Key>
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="NombreCategoria" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdProducto" Type="Int64" Nullable="false" />
+    <Property Name="NombreProducto" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="CantidadVendida" Type="Int32" />
+    <Property Name="Stock" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VRol">
+    <Key>
+      <PropertyRef Name="IdRol" />
+      <PropertyRef Name="NombreRol" />
+      <PropertyRef Name="Estado" />
+    </Key>
+    <Property Name="IdRol" Type="Int64" Nullable="false" />
+    <Property Name="NombreRol" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="110" FixedLength="false" Unicode="false" />
+    <Property Name="Estado" Type="String" MaxLength="6" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VRolPermiso">
+    <Key>
+      <PropertyRef Name="IdRol" />
+      <PropertyRef Name="NombreRol" />
+      <PropertyRef Name="IdPermiso" />
+      <PropertyRef Name="NombrePermiso" />
+      <PropertyRef Name="Estado" />
+    </Key>
+    <Property Name="IdRol" Type="Int64" Nullable="false" />
+    <Property Name="NombreRol" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdPermiso" Type="Int64" Nullable="false" />
+    <Property Name="NombrePermiso" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VServicioActivo">
+    <Key>
+      <PropertyRef Name="IdServicio" />
+      <PropertyRef Name="NombreServicio" />
+      <PropertyRef Name="IdPrecio" />
+      <PropertyRef Name="EstadoServicio" />
+    </Key>
+    <Property Name="IdServicio" Type="Int64" Nullable="false" />
+    <Property Name="NombreServicio" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripción" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="IdPrecio" Type="Int64" Nullable="false" />
+    <Property Name="PrecioDiario" Type="Double" />
+    <Property Name="PrecioQuincenal" Type="Double" />
+    <Property Name="PrecioMensual" Type="Double" />
+    <Property Name="EstadoServicio" Type="Int32" Nullable="false" />
+    <Property Name="HoraInicio" Type="Time" Precision="7" />
+    <Property Name="HoraFin" Type="Time" Precision="7" />
+    <Property Name="RangoDia" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VSolicitudGeneral">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="FechaSolicitud" />
+      <PropertyRef Name="Estado" />
+      <PropertyRef Name="TipoPago" />
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdCliente" Type="Int64" />
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MontoTotal" Type="Double" />
+    <Property Name="TipoPago" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdDescuento" Type="Int64" />
+  </EntityType>
+  <EntityType Name="VSolicitudGeneralAño">
+    <Key>
+      <PropertyRef Name="IdAño" />
+    </Key>
+    <Property Name="IdAño" Type="Int64" Nullable="false" />
+    <Property Name="NombreAño" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VSolicitudGeneralConsolidado">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="Estado" />
+      <PropertyRef Name="TipoPago" />
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdCliente" Type="Int64" />
+    <Property Name="FechaSolicitud" Type="DateTime" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SubTotal" Type="Double" />
+    <Property Name="TipoPago" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descuento" Type="Double" />
+  </EntityType>
+  <EntityType Name="VSolicitudGeneralMes">
+    <Key>
+      <PropertyRef Name="IdMes" />
+    </Key>
+    <Property Name="IdMes" Type="Int64" Nullable="false" />
+    <Property Name="NombreMes" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="AñoSolicitud" Type="Int32" />
+  </EntityType>
+  <EntityType Name="VSolicitudProducto">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="FechaSolicitud" />
+      <PropertyRef Name="Estado" />
+      <PropertyRef Name="TipoPago" />
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdCliente" Type="Int64" />
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MontoTotal" Type="Double" />
+    <Property Name="TipoPago" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdDescuento" Type="Int64" />
+  </EntityType>
+  <EntityType Name="VSolicitudProductoGeneral">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="FechaSolicitud" />
+      <PropertyRef Name="Estado" />
+      <PropertyRef Name="TipoPago" />
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="Usuario" />
+      <PropertyRef Name="Descuento" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdCliente" Type="Int64" />
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SubTotal" Type="Double" />
+    <Property Name="TipoPago" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descuento" Type="Double" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VSolicitudServicio">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="FechaSolicitud" />
+      <PropertyRef Name="Estado" />
+      <PropertyRef Name="TipoPago" />
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdCliente" Type="Int64" />
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MontoTotal" Type="Double" />
+    <Property Name="TipoPago" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdDescuento" Type="Int64" />
+  </EntityType>
+  <EntityType Name="VSolicitudServicioCredito">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="FechaSolicitud" />
+      <PropertyRef Name="Estado" />
+      <PropertyRef Name="TipoPago" />
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="Usuario" />
+      <PropertyRef Name="Descuento" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdCliente" Type="Int64" />
+    <Property Name="FechaSolicitud" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SubTotal" Type="Double" />
+    <Property Name="TipoPago" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descuento" Type="String" MaxLength="1" FixedLength="false" Unicode="false" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VSolicitudServicioPago">
+    <Key>
+      <PropertyRef Name="IdSolicitud" />
+      <PropertyRef Name="Estado" />
+      <PropertyRef Name="TipoPago" />
+      <PropertyRef Name="TipoSolicitud" />
+      <PropertyRef Name="Usuario" />
+    </Key>
+    <Property Name="IdSolicitud" Type="Int64" Nullable="false" />
+    <Property Name="IdCliente" Type="Int64" />
+    <Property Name="FechaSolicitud" Type="DateTime" Precision="0" />
+    <Property Name="Estado" Type="String" MaxLength="9" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="SubTotal" Type="Double" />
+    <Property Name="TipoPago" Type="String" MaxLength="7" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="TipoSolicitud" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descuento" Type="Double" />
+  </EntityType>
+  <EntityType Name="VUsuario">
+    <Key>
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="IdUsuario" />
+      <PropertyRef Name="Usuario" />
+      <PropertyRef Name="Contraseña" />
+      <PropertyRef Name="NombreRol" />
+      <PropertyRef Name="Estado" />
+    </Key>
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreEmpleado" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="IdUsuario" Type="Int64" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="130" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NombreRol" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Estado" Type="String" MaxLength="8" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NombreSucursal" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="NombreCiudad" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VUsuarioActivo">
+    <Key>
+      <PropertyRef Name="Código" />
+      <PropertyRef Name="IdUsuario" />
+      <PropertyRef Name="Usuario" />
+      <PropertyRef Name="Contraseña" />
+      <PropertyRef Name="NombreRol" />
+    </Key>
+    <Property Name="Código" Type="Int64" Nullable="false" />
+    <Property Name="NombreEmpleado" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="IdUsuario" Type="Int64" Nullable="false" />
+    <Property Name="Usuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="130" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NombreRol" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="NombreSucursal" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="NombreCiudad" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="VUsuarioRolPermisos">
+    <Key>
+      <PropertyRef Name="IdPersona" />
+      <PropertyRef Name="IdUsuario" />
+      <PropertyRef Name="NombreUsuario" />
+      <PropertyRef Name="Contraseña" />
+      <PropertyRef Name="IdRol" />
+      <PropertyRef Name="NombreRol" />
+      <PropertyRef Name="IdPermiso" />
+      <PropertyRef Name="NombrePermiso" />
+      <PropertyRef Name="EstadoRolPermiso" />
+    </Key>
+    <Property Name="NombreSucursal" Type="String" MaxLength="90" FixedLength="false" Unicode="false" />
+    <Property Name="IdPersona" Type="Int64" Nullable="false" />
+    <Property Name="NombreEmpleado" Type="String" MaxLength="272" FixedLength="false" Unicode="false" />
+    <Property Name="Foto" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <Property Name="IdUsuario" Type="Int64" Nullable="false" />
+    <Property Name="NombreUsuario" Type="String" MaxLength="90" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Contraseña" Type="String" MaxLength="130" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdRol" Type="Int64" Nullable="false" />
+    <Property Name="NombreRol" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="IdPermiso" Type="Int64" Nullable="false" />
+    <Property Name="NombrePermiso" Type="String" MaxLength="60" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EstadoRolPermiso" Type="Int32" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Asistenci__IdSol__5DCAEF64">
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="0..1" />
+    <End Role="Asistencia" Type="Self.Asistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Solicitud">
+        <PropertyRef Name="IdSolicitud" />
+      </Principal>
+      <Dependent Role="Asistencia">
+        <PropertyRef Name="IdSolicitud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Producto__IdCate__38996AB5">
+    <End Role="Categoria" Type="Self.Categoria" Multiplicity="0..1" />
+    <End Role="Producto" Type="Self.Producto" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categoria">
+        <PropertyRef Name="IdCategoria" />
+      </Principal>
+      <Dependent Role="Producto">
+        <PropertyRef Name="IdCategoria" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Zona__IdCiudad__145C0A3F">
+    <End Role="Ciudad" Type="Self.Ciudad" Multiplicity="0..1" />
+    <End Role="Zona" Type="Self.Zona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ciudad">
+        <PropertyRef Name="IdCiudad" />
+      </Principal>
+      <Dependent Role="Zona">
+        <PropertyRef Name="IdCiudad" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cliente__IdPerso__1BFD2C07">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="IdPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Credito__IdSolic__693CA210">
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="0..1" />
+    <End Role="Credito" Type="Self.Credito" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Solicitud">
+        <PropertyRef Name="IdSolicitud" />
+      </Principal>
+      <Dependent Role="Credito">
+        <PropertyRef Name="IdSolicitud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Cuota__IdCredito__6C190EBB">
+    <End Role="Credito" Type="Self.Credito" Multiplicity="0..1" />
+    <End Role="Cuota" Type="Self.Cuota" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Credito">
+        <PropertyRef Name="IdCredito" />
+      </Principal>
+      <Dependent Role="Cuota">
+        <PropertyRef Name="IdCredito" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Solicitud__IdDes__4E88ABD4">
+    <End Role="Descuento" Type="Self.Descuento" Multiplicity="0..1" />
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Descuento">
+        <PropertyRef Name="IdDescuento" />
+      </Principal>
+      <Dependent Role="Solicitud">
+        <PropertyRef Name="IdDescuento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleSo__IdPre__534D60F1">
+    <End Role="Precio" Type="Self.Precio" Multiplicity="1" />
+    <End Role="DetalleSolicitud" Type="Self.DetalleSolicitud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Precio">
+        <PropertyRef Name="IdPrecio" />
+      </Principal>
+      <Dependent Role="DetalleSolicitud">
+        <PropertyRef Name="IdPrecio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleSo__IdSol__52593CB8">
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="1" />
+    <End Role="DetalleSolicitud" Type="Self.DetalleSolicitud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Solicitud">
+        <PropertyRef Name="IdSolicitud" />
+      </Principal>
+      <Dependent Role="DetalleSolicitud">
+        <PropertyRef Name="IdSolicitud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FKDetalleSolicitud">
+    <End Role="DetalleSolicitud" Type="Self.DetalleSolicitud" Multiplicity="0..1" />
+    <End Role="Pago" Type="Self.Pago" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DetalleSolicitud">
+        <PropertyRef Name="IdSolicitud" />
+        <PropertyRef Name="IdPrecio" />
+      </Principal>
+      <Dependent Role="Pago">
+        <PropertyRef Name="IdSolicitud" />
+        <PropertyRef Name="IdPrecio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleSo__IdPre__76969D2E">
+    <End Role="Precio" Type="Self.Precio" Multiplicity="1" />
+    <End Role="DetalleSolicitudCompra" Type="Self.DetalleSolicitudCompra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Precio">
+        <PropertyRef Name="IdPrecio" />
+      </Principal>
+      <Dependent Role="DetalleSolicitudCompra">
+        <PropertyRef Name="IdPrecio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__DetalleSo__IdSol__75A278F5">
+    <End Role="SolicitudCompra" Type="Self.SolicitudCompra" Multiplicity="1" />
+    <End Role="DetalleSolicitudCompra" Type="Self.DetalleSolicitudCompra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SolicitudCompra">
+        <PropertyRef Name="IdSolicitudCompra" />
+      </Principal>
+      <Dependent Role="DetalleSolicitudCompra">
+        <PropertyRef Name="IdSolicitudCompra" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Empleado__IdPers__1ED998B2">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="IdPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Horario__IdEmple__6383C8BA">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
+    <End Role="Horario" Type="Self.Horario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="Horario">
+        <PropertyRef Name="IdEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Factura__IdPago__5AEE82B9">
+    <End Role="Pago" Type="Self.Pago" Multiplicity="0..1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Pago">
+        <PropertyRef Name="IdPago" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="IdPago" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Factura__IdSolic__59FA5E80">
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="0..1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Solicitud">
+        <PropertyRef Name="IdSolicitud" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="IdSolicitud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Horario__IdClien__6477ECF3">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+    <End Role="Horario" Type="Self.Horario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="Horario">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Horario__IdServi__628FA481">
+    <End Role="Servicio" Type="Self.Servicio" Multiplicity="0..1" />
+    <End Role="Horario" Type="Self.Horario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicio">
+        <PropertyRef Name="IdServicio" />
+      </Principal>
+      <Dependent Role="Horario">
+        <PropertyRef Name="IdServicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Horario__IdSolic__656C112C">
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="0..1" />
+    <End Role="Horario" Type="Self.Horario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Solicitud">
+        <PropertyRef Name="IdSolicitud" />
+      </Principal>
+      <Dependent Role="Horario">
+        <PropertyRef Name="IdSolicitud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Horario__IdTurno__66603565">
+    <End Role="Turno" Type="Self.Turno" Multiplicity="0..1" />
+    <End Role="Horario" Type="Self.Horario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Turno">
+        <PropertyRef Name="IdTurno" />
+      </Principal>
+      <Dependent Role="Horario">
+        <PropertyRef Name="IdTurno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RolPermis__IdPer__300424B4">
+    <End Role="Permiso" Type="Self.Permiso" Multiplicity="1" />
+    <End Role="RolPermiso" Type="Self.RolPermiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Permiso">
+        <PropertyRef Name="IdPermiso" />
+      </Principal>
+      <Dependent Role="RolPermiso">
+        <PropertyRef Name="IdPermiso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Persona__IdSucur__1920BF5C">
+    <End Role="Sucursal" Type="Self.Sucursal" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sucursal">
+        <PropertyRef Name="IdSucursal" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="IdSucursal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Persona__IdZona__182C9B23">
+    <End Role="Zona" Type="Self.Zona" Multiplicity="0..1" />
+    <End Role="Persona" Type="Self.Persona" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Zona">
+        <PropertyRef Name="IdZona" />
+      </Principal>
+      <Dependent Role="Persona">
+        <PropertyRef Name="IdZona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Solicitud__IdCli__4AB81AF0">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="Solicitud">
+        <PropertyRef Name="IdCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Solicitud__IdEmp__4BAC3F29">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="0..1" />
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="Solicitud">
+        <PropertyRef Name="IdEmpleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Usuario__IdPerso__286302EC">
+    <End Role="Persona" Type="Self.Persona" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Persona">
+        <PropertyRef Name="IdPersona" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="IdPersona" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Solicitud__IdPla__4D94879B">
+    <End Role="Plazo" Type="Self.Plazo" Multiplicity="0..1" />
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Plazo">
+        <PropertyRef Name="IdPlazo" />
+      </Principal>
+      <Dependent Role="Solicitud">
+        <PropertyRef Name="IdPlazo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Precio__IdProduc__3F466844">
+    <End Role="Producto" Type="Self.Producto" Multiplicity="0..1" />
+    <End Role="Precio" Type="Self.Precio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Producto">
+        <PropertyRef Name="IdProducto" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="IdProducto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Precio__IdServic__403A8C7D">
+    <End Role="Servicio" Type="Self.Servicio" Multiplicity="0..1" />
+    <End Role="Precio" Type="Self.Precio" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servicio">
+        <PropertyRef Name="IdServicio" />
+      </Principal>
+      <Dependent Role="Precio">
+        <PropertyRef Name="IdServicio" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__RolPermis__IdRol__2F10007B">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="1" />
+    <End Role="RolPermiso" Type="Self.RolPermiso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="IdRol" />
+      </Principal>
+      <Dependent Role="RolPermiso">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Usuario__IdRol__29572725">
+    <End Role="Rol" Type="Self.Rol" Multiplicity="0..1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Rol">
+        <PropertyRef Name="IdRol" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="IdRol" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Solicitud__IdTip__4CA06362">
+    <End Role="TipoSolicitud" Type="Self.TipoSolicitud" Multiplicity="0..1" />
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TipoSolicitud">
+        <PropertyRef Name="IdTipoSolicitud" />
+      </Principal>
+      <Dependent Role="Solicitud">
+        <PropertyRef Name="IdTipoSolicitud" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Solicitud__IdUsu__4F7CD00D">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="Solicitud" Type="Self.Solicitud" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="Solicitud">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Solicitud__IdUsu__72C60C4A">
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="0..1" />
+    <End Role="SolicitudCompra" Type="Self.SolicitudCompra" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Usuario">
+        <PropertyRef Name="IdUsuario" />
+      </Principal>
+      <Dependent Role="SolicitudCompra">
+        <PropertyRef Name="IdUsuario" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="dbGimnasioSportLineEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Año" EntityType="Self.Año" />
+    <EntitySet Name="Asistencia" EntityType="Self.Asistencia" />
+    <EntitySet Name="BitacoraLogin" EntityType="Self.BitacoraLogin" />
+    <EntitySet Name="BitacoraSolicitudVenta" EntityType="Self.BitacoraSolicitudVenta" />
+    <EntitySet Name="Categoria" EntityType="Self.Categoria" />
+    <EntitySet Name="Ciudad" EntityType="Self.Ciudad" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="Credito" EntityType="Self.Credito" />
+    <EntitySet Name="Cuota" EntityType="Self.Cuota" />
+    <EntitySet Name="Descuento" EntityType="Self.Descuento" />
+    <EntitySet Name="DetalleSolicitud" EntityType="Self.DetalleSolicitud" />
+    <EntitySet Name="DetalleSolicitudCompra" EntityType="Self.DetalleSolicitudCompra" />
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" />
+    <EntitySet Name="Horario" EntityType="Self.Horario" />
+    <EntitySet Name="Mes" EntityType="Self.Mes" />
+    <EntitySet Name="Pago" EntityType="Self.Pago" />
+    <EntitySet Name="Permiso" EntityType="Self.Permiso" />
+    <EntitySet Name="Persona" EntityType="Self.Persona" />
+    <EntitySet Name="Plazo" EntityType="Self.Plazo" />
+    <EntitySet Name="Precio" EntityType="Self.Precio" />
+    <EntitySet Name="Producto" EntityType="Self.Producto" />
+    <EntitySet Name="Rol" EntityType="Self.Rol" />
+    <EntitySet Name="RolPermiso" EntityType="Self.RolPermiso" />
+    <EntitySet Name="Servicio" EntityType="Self.Servicio" />
+    <EntitySet Name="Solicitud" EntityType="Self.Solicitud" />
+    <EntitySet Name="SolicitudCompra" EntityType="Self.SolicitudCompra" />
+    <EntitySet Name="Sucursal" EntityType="Self.Sucursal" />
+    <EntitySet Name="TipoSolicitud" EntityType="Self.TipoSolicitud" />
+    <EntitySet Name="Turno" EntityType="Self.Turno" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="Zona" EntityType="Self.Zona" />
+    <EntitySet Name="VCategoria" EntityType="Self.VCategoria" />
+    <EntitySet Name="VClienteAsistencia" EntityType="Self.VClienteAsistencia" />
+    <EntitySet Name="VClienteCreditoGeneral" EntityType="Self.VClienteCreditoGeneral" />
+    <EntitySet Name="VClienteDetalleCredito" EntityType="Self.VClienteDetalleCredito" />
+    <EntitySet Name="VClienteGeneral" EntityType="Self.VClienteGeneral" />
+    <EntitySet Name="VClientePagoServicio" EntityType="Self.VClientePagoServicio" />
+    <EntitySet Name="VClientes" EntityType="Self.VClientes" />
+    <EntitySet Name="VClienteServicio" EntityType="Self.VClienteServicio" />
+    <EntitySet Name="VClienteSolicitudDetalleGeneral" EntityType="Self.VClienteSolicitudDetalleGeneral" />
+    <EntitySet Name="VClienteSolicitudDiario" EntityType="Self.VClienteSolicitudDiario" />
+    <EntitySet Name="VClienteSolicitudGeneral" EntityType="Self.VClienteSolicitudGeneral" />
+    <EntitySet Name="VClienteSolicitudGeneralConsolidado" EntityType="Self.VClienteSolicitudGeneralConsolidado" />
+    <EntitySet Name="VClienteSolicitudServicioPlanes" EntityType="Self.VClienteSolicitudServicioPlanes" />
+    <EntitySet Name="VCumpleañeros" EntityType="Self.VCumpleañeros" />
+    <EntitySet Name="VCumpleañerosFoto" EntityType="Self.VCumpleañerosFoto" />
+    <EntitySet Name="VCumpleañerosGral" EntityType="Self.VCumpleañerosGral" />
+    <EntitySet Name="VDescuento" EntityType="Self.VDescuento" />
+    <EntitySet Name="VDetalleSolicitudProducto" EntityType="Self.VDetalleSolicitudProducto" />
+    <EntitySet Name="VDetalleSolicitudProductoServicio" EntityType="Self.VDetalleSolicitudProductoServicio" />
+    <EntitySet Name="VDetalleSolicitudServicio" EntityType="Self.VDetalleSolicitudServicio" />
+    <EntitySet Name="VDetalleSolicitudServicioPago" EntityType="Self.VDetalleSolicitudServicioPago" />
+    <EntitySet Name="VEmpleados" EntityType="Self.VEmpleados" />
+    <EntitySet Name="VEmpleadosActivoSinUser" EntityType="Self.VEmpleadosActivoSinUser" />
+    <EntitySet Name="VFacturaGeneral" EntityType="Self.VFacturaGeneral" />
+    <EntitySet Name="VHorarioServicioEstadoPlan" EntityType="Self.VHorarioServicioEstadoPlan" />
+    <EntitySet Name="VIngresoGeneral" EntityType="Self.VIngresoGeneral" />
+    <EntitySet Name="VIngresoGeneralConsolidado" EntityType="Self.VIngresoGeneralConsolidado" />
+    <EntitySet Name="VPermiso" EntityType="Self.VPermiso" />
+    <EntitySet Name="VProducto" EntityType="Self.VProducto" />
+    <EntitySet Name="VProductoInventarioDiario" EntityType="Self.VProductoInventarioDiario" />
+    <EntitySet Name="VRol" EntityType="Self.VRol" />
+    <EntitySet Name="VRolPermiso" EntityType="Self.VRolPermiso" />
+    <EntitySet Name="VServicioActivo" EntityType="Self.VServicioActivo" />
+    <EntitySet Name="VSolicitudGeneral" EntityType="Self.VSolicitudGeneral" />
+    <EntitySet Name="VSolicitudGeneralAño" EntityType="Self.VSolicitudGeneralAño" />
+    <EntitySet Name="VSolicitudGeneralConsolidado" EntityType="Self.VSolicitudGeneralConsolidado" />
+    <EntitySet Name="VSolicitudGeneralMes" EntityType="Self.VSolicitudGeneralMes" />
+    <EntitySet Name="VSolicitudProducto" EntityType="Self.VSolicitudProducto" />
+    <EntitySet Name="VSolicitudProductoGeneral" EntityType="Self.VSolicitudProductoGeneral" />
+    <EntitySet Name="VSolicitudServicio" EntityType="Self.VSolicitudServicio" />
+    <EntitySet Name="VSolicitudServicioCredito" EntityType="Self.VSolicitudServicioCredito" />
+    <EntitySet Name="VSolicitudServicioPago" EntityType="Self.VSolicitudServicioPago" />
+    <EntitySet Name="VUsuario" EntityType="Self.VUsuario" />
+    <EntitySet Name="VUsuarioActivo" EntityType="Self.VUsuarioActivo" />
+    <EntitySet Name="VUsuarioRolPermisos" EntityType="Self.VUsuarioRolPermisos" />
+    <AssociationSet Name="FK__Asistenci__IdSol__5DCAEF64" Association="Self.FK__Asistenci__IdSol__5DCAEF64">
+      <End Role="Solicitud" EntitySet="Solicitud" />
+      <End Role="Asistencia" EntitySet="Asistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Producto__IdCate__38996AB5" Association="Self.FK__Producto__IdCate__38996AB5">
+      <End Role="Categoria" EntitySet="Categoria" />
+      <End Role="Producto" EntitySet="Producto" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Zona__IdCiudad__145C0A3F" Association="Self.FK__Zona__IdCiudad__145C0A3F">
+      <End Role="Ciudad" EntitySet="Ciudad" />
+      <End Role="Zona" EntitySet="Zona" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cliente__IdPerso__1BFD2C07" Association="Self.FK__Cliente__IdPerso__1BFD2C07">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Credito__IdSolic__693CA210" Association="Self.FK__Credito__IdSolic__693CA210">
+      <End Role="Solicitud" EntitySet="Solicitud" />
+      <End Role="Credito" EntitySet="Credito" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Cuota__IdCredito__6C190EBB" Association="Self.FK__Cuota__IdCredito__6C190EBB">
+      <End Role="Credito" EntitySet="Credito" />
+      <End Role="Cuota" EntitySet="Cuota" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Solicitud__IdDes__4E88ABD4" Association="Self.FK__Solicitud__IdDes__4E88ABD4">
+      <End Role="Descuento" EntitySet="Descuento" />
+      <End Role="Solicitud" EntitySet="Solicitud" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleSo__IdPre__534D60F1" Association="Self.FK__DetalleSo__IdPre__534D60F1">
+      <End Role="Precio" EntitySet="Precio" />
+      <End Role="DetalleSolicitud" EntitySet="DetalleSolicitud" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleSo__IdSol__52593CB8" Association="Self.FK__DetalleSo__IdSol__52593CB8">
+      <End Role="Solicitud" EntitySet="Solicitud" />
+      <End Role="DetalleSolicitud" EntitySet="DetalleSolicitud" />
+    </AssociationSet>
+    <AssociationSet Name="FKDetalleSolicitud" Association="Self.FKDetalleSolicitud">
+      <End Role="DetalleSolicitud" EntitySet="DetalleSolicitud" />
+      <End Role="Pago" EntitySet="Pago" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleSo__IdPre__76969D2E" Association="Self.FK__DetalleSo__IdPre__76969D2E">
+      <End Role="Precio" EntitySet="Precio" />
+      <End Role="DetalleSolicitudCompra" EntitySet="DetalleSolicitudCompra" />
+    </AssociationSet>
+    <AssociationSet Name="FK__DetalleSo__IdSol__75A278F5" Association="Self.FK__DetalleSo__IdSol__75A278F5">
+      <End Role="SolicitudCompra" EntitySet="SolicitudCompra" />
+      <End Role="DetalleSolicitudCompra" EntitySet="DetalleSolicitudCompra" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Empleado__IdPers__1ED998B2" Association="Self.FK__Empleado__IdPers__1ED998B2">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Horario__IdEmple__6383C8BA" Association="Self.FK__Horario__IdEmple__6383C8BA">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="Horario" EntitySet="Horario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Factura__IdPago__5AEE82B9" Association="Self.FK__Factura__IdPago__5AEE82B9">
+      <End Role="Pago" EntitySet="Pago" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Factura__IdSolic__59FA5E80" Association="Self.FK__Factura__IdSolic__59FA5E80">
+      <End Role="Solicitud" EntitySet="Solicitud" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Horario__IdClien__6477ECF3" Association="Self.FK__Horario__IdClien__6477ECF3">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Horario" EntitySet="Horario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Horario__IdServi__628FA481" Association="Self.FK__Horario__IdServi__628FA481">
+      <End Role="Servicio" EntitySet="Servicio" />
+      <End Role="Horario" EntitySet="Horario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Horario__IdSolic__656C112C" Association="Self.FK__Horario__IdSolic__656C112C">
+      <End Role="Solicitud" EntitySet="Solicitud" />
+      <End Role="Horario" EntitySet="Horario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Horario__IdTurno__66603565" Association="Self.FK__Horario__IdTurno__66603565">
+      <End Role="Turno" EntitySet="Turno" />
+      <End Role="Horario" EntitySet="Horario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RolPermis__IdPer__300424B4" Association="Self.FK__RolPermis__IdPer__300424B4">
+      <End Role="Permiso" EntitySet="Permiso" />
+      <End Role="RolPermiso" EntitySet="RolPermiso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Persona__IdSucur__1920BF5C" Association="Self.FK__Persona__IdSucur__1920BF5C">
+      <End Role="Sucursal" EntitySet="Sucursal" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Persona__IdZona__182C9B23" Association="Self.FK__Persona__IdZona__182C9B23">
+      <End Role="Zona" EntitySet="Zona" />
+      <End Role="Persona" EntitySet="Persona" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Solicitud__IdCli__4AB81AF0" Association="Self.FK__Solicitud__IdCli__4AB81AF0">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Solicitud" EntitySet="Solicitud" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Solicitud__IdEmp__4BAC3F29" Association="Self.FK__Solicitud__IdEmp__4BAC3F29">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Solicitud" EntitySet="Solicitud" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Usuario__IdPerso__286302EC" Association="Self.FK__Usuario__IdPerso__286302EC">
+      <End Role="Persona" EntitySet="Persona" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Solicitud__IdPla__4D94879B" Association="Self.FK__Solicitud__IdPla__4D94879B">
+      <End Role="Plazo" EntitySet="Plazo" />
+      <End Role="Solicitud" EntitySet="Solicitud" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Precio__IdProduc__3F466844" Association="Self.FK__Precio__IdProduc__3F466844">
+      <End Role="Producto" EntitySet="Producto" />
+      <End Role="Precio" EntitySet="Precio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Precio__IdServic__403A8C7D" Association="Self.FK__Precio__IdServic__403A8C7D">
+      <End Role="Servicio" EntitySet="Servicio" />
+      <End Role="Precio" EntitySet="Precio" />
+    </AssociationSet>
+    <AssociationSet Name="FK__RolPermis__IdRol__2F10007B" Association="Self.FK__RolPermis__IdRol__2F10007B">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="RolPermiso" EntitySet="RolPermiso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Usuario__IdRol__29572725" Association="Self.FK__Usuario__IdRol__29572725">
+      <End Role="Rol" EntitySet="Rol" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Solicitud__IdTip__4CA06362" Association="Self.FK__Solicitud__IdTip__4CA06362">
+      <End Role="TipoSolicitud" EntitySet="TipoSolicitud" />
+      <End Role="Solicitud" EntitySet="Solicitud" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Solicitud__IdUsu__4F7CD00D" Association="Self.FK__Solicitud__IdUsu__4F7CD00D">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="Solicitud" EntitySet="Solicitud" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Solicitud__IdUsu__72C60C4A" Association="Self.FK__Solicitud__IdUsu__72C60C4A">
+      <End Role="Usuario" EntitySet="Usuario" />
+      <End Role="SolicitudCompra" EntitySet="SolicitudCompra" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,20 @@
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\bin\Debug\Proyecto.Utilitarios.dll
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\bin\Debug\Proyecto.Utilitarios.pdb
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.dll
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.pdb
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.csprojResolveAssemblyReference.cache
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\bin\Debug\Proyecto.Utilitarios.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\bin\Debug\Proyecto.Utilitarios.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.pdb
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\bin\Debug\Proyecto.Utilitarios.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\bin\Debug\Proyecto.Utilitarios.pdb
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.csprojResolveAssemblyReference.cache
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.csprojResolveAssemblyReference.cache
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\bin\Debug\Proyecto.Utilitarios.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\bin\Debug\Proyecto.Utilitarios.pdb
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.csprojResolveAssemblyReference.cache
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Debug\Proyecto.Utilitarios.pdb

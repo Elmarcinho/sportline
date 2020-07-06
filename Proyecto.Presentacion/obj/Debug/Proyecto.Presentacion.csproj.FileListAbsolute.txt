@@ -1,0 +1,293 @@
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.exe.config
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCliente.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmEmpleado.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmUsuario.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.csproj.GenerateResource.Cache
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.exe
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.pdb
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Datos.dll
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Negocio.dll
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Datos.pdb
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Negocio.pdb
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.exe
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.pdb
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaEmpleado.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmRol.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmMenu.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Properties.Resources.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaCliente.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaUsuarioRol.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Utilitarios.dll
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Utilitarios.pdb
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.Form1.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.exe.config
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.exe
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.pdb
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.csprojResolveAssemblyReference.cache
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.Form1.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCliente.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmEmpleado.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaAsignarEmpleado.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaCliente.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaEmpleado.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaRolPermiso.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaUsuarioRol.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmMenu.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmPermiso.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmRol.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmUsuario.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Properties.Resources.resources
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.csproj.GenerateResource.Cache
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.exe
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.pdb
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\EntityFramework.dll
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Datos.dll
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Negocio.dll
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Utilitarios.dll
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Datos.pdb
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Negocio.pdb
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Utilitarios.pdb
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\EntityFramework.xml
+H:\UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmProducto.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmServicio.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCategoria.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCategoria.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCompra.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionPago.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionProducto.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionServicio.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionVenta.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCliente.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionEmpleado.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionRolPermiso.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaProducto.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmVentaProducto.resources
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmVentaServicio.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.exe.config
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.exe
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.exe
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Datos.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Negocio.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Utilitarios.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Datos.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Negocio.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Utilitarios.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCategoria.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCategoria.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCompra.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionPago.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionProducto.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionVenta.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaCliente.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaProducto.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.Form1.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCliente.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmEmpleado.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaEmpleado.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCliente.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionEmpleado.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionRolPermiso.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaUsuarioRol.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmMenu.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmProducto.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmRol.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmUsuario.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmVentaProducto.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmVentaServicio.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Properties.Resources.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.csproj.GenerateResource.Cache
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmRptFactura.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\RdlCompile.cache
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\RdlCompile.compiled
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmHabilitarEmpleado.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmInforme.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmPagoCredito.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCredito.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCompraProducto.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmReporte.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionReporte.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCargarCredito.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Formulario\Reportes\RptDetalleCredito.rdlc
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Formulario\Reportes\RptFactura.rdlc
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.exe.config
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.exe
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.pdb
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Formulario\Reportes\RptDetalleCredito.rdlc
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Formulario\Reportes\RptFactura.rdlc
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.exe
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.pdb
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\EntityFramework.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\MessagingToolkit.QRCode.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Datos.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Negocio.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Utilitarios.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.SqlServer.Types.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Datos.pdb
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Negocio.pdb
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Utilitarios.pdb
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\EntityFramework.xml
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.csprojResolveAssemblyReference.cache
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCargarCredito.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCategoria.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCompraProducto.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCredito.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCategoria.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCompra.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionPago.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionProducto.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionServicio.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionVenta.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmHabilitarEmpleado.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmInforme.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaCliente.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaProducto.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.Form1.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCliente.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmEmpleado.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaEmpleado.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCliente.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionEmpleado.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionRolPermiso.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaUsuarioRol.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmMenu.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmPagoCredito.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmProducto.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmReporte.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmRol.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmRptFactura.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionReporte.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmServicio.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmUsuario.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmVentaProducto.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmVentaServicio.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Properties.Resources.resources
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.csproj.GenerateResource.Cache
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\RdlCompile.cache
+H:\Elmarcinho\UPDS\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\RdlCompile.compiled
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionServicio.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaServicio.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmServicio.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionEmpresa.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmPagoServicio.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmPago.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaPago.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmDescuento.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmAsistencia.resources
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionAsistencia.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Formulario\Reportes\RptDetalleCredito.rdlc
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Formulario\Reportes\RptFactura.rdlc
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.exe.config
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.exe
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Presentacion.pdb
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\EntityFramework.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Datos.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Negocio.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Utilitarios.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Datos.pdb
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Negocio.pdb
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\Proyecto.Utilitarios.pdb
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\EntityFramework.xml
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.csprojResolveAssemblyReference.cache
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmAsistencia.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCargarCredito.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCategoria.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCompraProducto.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCredito.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmDescuento.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionAsistencia.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCategoria.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCompra.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionEmpresa.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionPago.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionProducto.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionServicio.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionVenta.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmHabilitarEmpleado.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmInforme.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaCliente.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaPago.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaProducto.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaServicio.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.Form1.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmCliente.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmEmpleado.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaEmpleado.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionCliente.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionEmpleado.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionRolPermiso.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmListaUsuarioRol.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmMenu.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmPago.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmPagoCredito.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmPagoServicio.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmProducto.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmReporte.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmRol.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmRptFactura.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmGestionReporte.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmServicio.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmUsuario.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmVentaProducto.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Formulario.FrmVentaServicio.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.Properties.Resources.resources
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.csproj.GenerateResource.Cache
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\RdlCompile.cache
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\RdlCompile.compiled
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.exe
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Presentacion\obj\Debug\Proyecto.Presentacion.pdb

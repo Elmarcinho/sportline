@@ -1,0 +1,12 @@
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\bin\Release\Proyecto.Negocio.dll.config
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\bin\Release\Proyecto.Negocio.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\bin\Release\Proyecto.Negocio.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\bin\Release\EntityFramework.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\bin\Release\Proyecto.Datos.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\bin\Release\Proyecto.Utilitarios.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\bin\Release\Proyecto.Datos.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\bin\Release\Proyecto.Utilitarios.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\bin\Release\EntityFramework.xml
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\obj\Release\Proyecto.Negocio.csprojResolveAssemblyReference.cache
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\obj\Release\Proyecto.Negocio.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Negocio\obj\Release\Proyecto.Negocio.pdb

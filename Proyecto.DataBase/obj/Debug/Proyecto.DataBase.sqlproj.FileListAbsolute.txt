@@ -1,0 +1,15 @@
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\bin\Debug\Proyecto.DataBase.dacpac
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\bin\Debug\Proyecto.DataBase.dll
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\bin\Debug\Proyecto.DataBase.pdb
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\obj\Debug\Proyecto.DataBase.dll
+C:\Users\Elmarcinho\Desktop\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\obj\Debug\Proyecto.DataBase.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\bin\Debug\Proyecto.DataBase.dacpac
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\bin\Debug\Proyecto.DataBase.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\bin\Debug\Proyecto.DataBase.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\obj\Debug\Proyecto.DataBase.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\obj\Debug\Proyecto.DataBase.pdb
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\bin\Debug\Proyecto.DataBase.dacpac
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\bin\Debug\Proyecto.DataBase.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\bin\Debug\Proyecto.DataBase.pdb
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\obj\Debug\Proyecto.DataBase.dll
+C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.DataBase\obj\Debug\Proyecto.DataBase.pdb

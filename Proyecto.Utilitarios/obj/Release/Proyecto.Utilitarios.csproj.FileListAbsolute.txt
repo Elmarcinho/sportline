@@ -1,0 +1,5 @@
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\bin\Release\Proyecto.Utilitarios.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\bin\Release\Proyecto.Utilitarios.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Release\Proyecto.Utilitarios.dll
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Release\Proyecto.Utilitarios.pdb
+C:\Users\Elmarcinho\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Utilitarios\obj\Release\Proyecto.Utilitarios.csprojResolveAssemblyReference.cache
