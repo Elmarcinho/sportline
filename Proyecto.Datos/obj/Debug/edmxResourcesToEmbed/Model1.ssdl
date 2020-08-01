@@ -645,12 +645,6 @@ advertencia 6002: La tabla o vista 'dbGimnasioSportLine.dbo.VCumpleañerosGral' 
     <Property Name="Mes" Type="nvarchar" MaxLength="30" />
   </EntityType>
   <!--Errores durante la generación:
-advertencia 6013: La tabla o vista 'dbGimnasioSportLine.dbo.VCuotaTotal' no tiene definida una clave principal y no es posible inferir ninguna clave principal válida. Esta tabla o vista se ha excluido. Para usar la entidad, necesitará revisar el esquema, agregar las claves correctas y quitar sus comentarios.
-        <EntityType Name="VCuotaTotal">
-          <Property Name="IdCredito" Type="bigint" />
-          <Property Name="MontoCuota" Type="float" />
-        </EntityType>-->
-  <!--Errores durante la generación:
 advertencia 6002: La tabla o vista 'dbGimnasioSportLine.dbo.VDescuento' no tiene definida ninguna clave principal. Se ha inferido la clave y la definición se creado como una vista o tabla de solo lectura.-->
   <EntityType Name="VDescuento">
     <Key>
@@ -1620,6 +1614,9 @@ advertencia 6002: La tabla o vista 'dbGimnasioSportLine.dbo.VUsuarioRolPermisos'
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="sp_VerificarClienteExiste" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="cedula" Type="int" Mode="In" />
+  </Function>
   <EntityContainer Name="dbGimnasioSportLineModelStoreContainer">
     <EntitySet Name="Año" EntityType="Self.Año" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Asistencia" EntityType="Self.Asistencia" Schema="dbo" store:Type="Tables" />

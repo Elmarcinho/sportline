@@ -62,7 +62,7 @@
             this.groupBox1.Size = new System.Drawing.Size(255, 93);
             this.groupBox1.TabIndex = 101;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Funciones";
+            this.groupBox1.Text = "Asistencia";
             // 
             // btnNuevaAsistencia
             // 

@@ -993,6 +993,19 @@ group by so.IdSolicitud,so.FechaSolicitud,(per.NombrePersona+' '+per.ApellidoPat
 per.DocumentoIdentidad,per.Direccion,pro.NombreProducto,pre.NombrePrecio,ds.Cantidad
 go
 
+create procedure sp_VerificarPersonaExiste
+@cedula as int
+as
+declare @existe int
+
+	if exists(select * from Persona where DocumentoIdentidad=@cedula)
+		set @existe = 1
+	else 
+		set @existe = 0
+
+select @existe
+go
+
 
 drop procedure spReporteFactura --Eliminar prodecedimiento
 execute spReporteFactura 1

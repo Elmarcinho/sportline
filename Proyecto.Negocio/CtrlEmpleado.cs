@@ -60,23 +60,24 @@ namespace Proyecto.Negocio
                 try
                 {
                     Persona ObjAuxPersona = Esquema.Persona.FirstOrDefault(a => a.IdPersona == objPersona.IdPersona);
-                    ObjAuxPersona.IdPersona = objPersona.IdPersona;
-                    ObjAuxPersona.NombrePersona = objPersona.NombrePersona;
-                    ObjAuxPersona.ApellidoPaterno = objPersona.ApellidoPaterno;
-                    ObjAuxPersona.ApellidoMaterno = objPersona.ApellidoMaterno;
+                    ObjAuxPersona.IdPersona         = objPersona.IdPersona;
+                    ObjAuxPersona.NombrePersona     = objPersona.NombrePersona;
+                    ObjAuxPersona.ApellidoPaterno   = objPersona.ApellidoPaterno;
+                    ObjAuxPersona.ApellidoMaterno   = objPersona.ApellidoMaterno;
                     ObjAuxPersona.DocumentoIdentidad = objPersona.DocumentoIdentidad;
                     ObjAuxPersona.CorreoElectronico = objPersona.CorreoElectronico;
-                    ObjAuxPersona.FechaNacimiento = objPersona.FechaNacimiento;
-                    ObjAuxPersona.Sexo = objPersona.Sexo;
-                    ObjAuxPersona.Telefono = objPersona.Telefono;
-                    ObjAuxPersona.Direccion = objPersona.Direccion;
-                    ObjAuxPersona.IdZona = objPersona.IdZona;
-                    ObjAuxPersona.IdSucursal = objPersona.IdSucursal;
-                    ObjAuxPersona.Foto = objPersona.Foto;
+                    ObjAuxPersona.FechaNacimiento   = objPersona.FechaNacimiento;
+                    ObjAuxPersona.Sexo              = objPersona.Sexo;
+                    ObjAuxPersona.Telefono          = objPersona.Telefono;
+                    ObjAuxPersona.Direccion         = objPersona.Direccion;
+                    ObjAuxPersona.IdZona            = objPersona.IdZona;
+                    ObjAuxPersona.IdSucursal        = objPersona.IdSucursal;
+                    ObjAuxPersona.Foto              = objPersona.Foto;
                     Esquema.Entry(ObjAuxPersona).State = System.Data.EntityState.Modified;
 
                     Empleado ObjAuxEmpleado = Esquema.Empleado.FirstOrDefault(a => a.IdPersona == objEmpleado.IdPersona);
-                    ObjAuxEmpleado.IdPersona = objEmpleado.IdPersona;
+                    ObjAuxEmpleado.IdPersona    = objEmpleado.IdPersona;
+                    ObjAuxEmpleado.FechaIngreso = objEmpleado.FechaIngreso;
                     Esquema.Entry(ObjAuxEmpleado).State = System.Data.EntityState.Modified;
 
                     if (Esquema.SaveChanges() == 2)

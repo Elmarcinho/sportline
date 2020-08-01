@@ -1806,5 +1806,11 @@
       <End Role="Usuario" EntitySet="Usuario" />
       <End Role="SolicitudCompra" EntitySet="SolicitudCompra" />
     </AssociationSet>
+    <FunctionImport Name="sp_VerificarClienteExiste" ReturnType="Collection(Int32)">
+      <Parameter Name="cedula" Mode="In" Type="Int32" />
+    </FunctionImport>
   </EntityContainer>
+  <ComplexType Name="sp_VerificarClienteExiste_Result">
+    <Property Type="Int32" Name="Column1" Nullable="true" />
+  </ComplexType>
 </Schema>

@@ -1019,5 +1019,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="sp_VerificarClienteExiste" FunctionName="dbGimnasioSportLineModel.Store.sp_VerificarClienteExiste" />
   </EntityContainerMapping>
 </Mapping>

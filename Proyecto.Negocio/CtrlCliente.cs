@@ -27,6 +27,14 @@ namespace Proyecto.Negocio
                 return 1;
             }
         }
+
+        public Boolean VerificarClienteExistente(int cedula)
+        {
+  
+            return Esquema.sp_VerificarPersonaExiste(cedula).FirstOrDefault() == 1 ? true : false;
+       
+        }
+
         public Boolean InsertarCliente(Persona objPersona, Cliente objCliente)
         {
             using (TransactionScope Transaccion = new TransactionScope())
@@ -97,7 +105,7 @@ namespace Proyecto.Negocio
                 }
             }
         }
-        
+
         public bool Validar(string Nombre, string ApellidoPaterno, string CI,bool M,bool F)
         {
 

@@ -196,9 +196,10 @@
             // 
             // txtCiNit
             // 
+            this.txtCiNit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCiNit.Location = new System.Drawing.Point(134, 167);
             this.txtCiNit.Name = "txtCiNit";
-            this.txtCiNit.Size = new System.Drawing.Size(123, 20);
+            this.txtCiNit.Size = new System.Drawing.Size(123, 22);
             this.txtCiNit.TabIndex = 15;
             this.txtCiNit.TextChanged += new System.EventHandler(this.txtCiNit_TextChanged);
             this.txtCiNit.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCi_KeyPress);
@@ -288,10 +289,10 @@
             // 
             // txtEmail
             // 
-            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F);
             this.txtEmail.Location = new System.Drawing.Point(134, 198);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(217, 21);
+            this.txtEmail.Size = new System.Drawing.Size(217, 22);
             this.txtEmail.TabIndex = 29;
             // 
             // label13
@@ -414,7 +415,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Red;
             this.pictureBox3.Location = new System.Drawing.Point(132, 165);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(127, 24);
+            this.pictureBox3.Size = new System.Drawing.Size(127, 27);
             this.pictureBox3.TabIndex = 80;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Visible = false;

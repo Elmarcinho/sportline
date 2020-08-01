@@ -117,24 +117,36 @@ namespace Proyecto.Presentacion.Formulario
         {
             try
             {
-                var x = objRNCliente.TraerClienteGeneralPorCedula(long.Parse(txtCiNit.Text));
+                
                 if (Utilitarios.Utilitarios.Evento == 0)
                 {
                     objPersona.IdPersona = objCtrlCliente.GenerarID();
                     
-                    if (x.LongCount() == 0)
-                    { objPersona.DocumentoIdentidad = Int64.Parse(this.txtCiNit.Text); }
-                    else { MessageBox.Show("No se puede registrar Cliente, porque ya existe registro con la misma cedula de identidad, por favor verifique e intente nuevamente.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning); return false; }
+                    if (! objCtrlCliente.VerificarClienteExistente(int.Parse(txtCiNit.Text))){
+
+                        objPersona.DocumentoIdentidad = Int64.Parse(this.txtCiNit.Text);
+                    }
+                    else {
+                        MessageBox.Show("No se puede registrar Cliente, porque ya existe registro con la misma cedula de identidad, por favor verifique e intente nuevamente.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return false;
+                    }
                 }
                 else
                 {
                     objPersona.IdPersona = Utilitarios.Utilitarios.IdCliente;
 
-                    if (x.LongCount() == 0)
-                    { objPersona.DocumentoIdentidad = Int64.Parse(this.txtCiNit.Text); }
-                    else if (x.LongCount() == 1)
-                    { objPersona.DocumentoIdentidad = Int64.Parse(this.txtCiNit.Text); }
-                    else { MessageBox.Show("No se puede registrar Cliente, porque ya existe registro con la misma cedula de identidad, por favor verifique e intente nuevamente.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning); return false; }
+                    if (Utilitarios.Utilitarios.CedulaIdendidad == long.Parse(this.txtCiNit.Text)){
+
+                        objPersona.DocumentoIdentidad = Int64.Parse(this.txtCiNit.Text);
+                    }
+                    else if (! objCtrlCliente.VerificarClienteExistente(int.Parse(txtCiNit.Text))){
+
+                        objPersona.DocumentoIdentidad = Int64.Parse(this.txtCiNit.Text);
+                    }
+                    else {
+                        MessageBox.Show("No se puede registrar Cliente, porque ya existe registro con la misma cedula de identidad, por favor verifique e intente nuevamente.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return false;
+                    }
                 }
 
                 objPersona.NombrePersona = this.txtNombreCliente.Text.Trim();

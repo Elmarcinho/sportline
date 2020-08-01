@@ -502,12 +502,11 @@
             // 
             // lbSursal
             // 
-            this.lbSursal.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbSursal.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbSursal.AutoSize = true;
             this.lbSursal.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbSursal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(145)))), ((int)(((byte)(142)))));
-            this.lbSursal.Location = new System.Drawing.Point(429, 4);
+            this.lbSursal.Location = new System.Drawing.Point(409, 4);
             this.lbSursal.Name = "lbSursal";
             this.lbSursal.Size = new System.Drawing.Size(89, 25);
             this.lbSursal.TabIndex = 7;
@@ -633,7 +632,7 @@
             this.lbHora.AutoSize = true;
             this.lbHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(145)))), ((int)(((byte)(142)))));
-            this.lbHora.Location = new System.Drawing.Point(746, -2);
+            this.lbHora.Location = new System.Drawing.Point(712, -2);
             this.lbHora.Name = "lbHora";
             this.lbHora.Size = new System.Drawing.Size(91, 39);
             this.lbHora.TabIndex = 6;

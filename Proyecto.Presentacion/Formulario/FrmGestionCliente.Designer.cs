@@ -42,7 +42,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnCerrarListaCliente = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnNuevoCliente = new System.Windows.Forms.Button();
             this.dgvCliente = new System.Windows.Forms.DataGridView();
             this.IdCliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NombreCli = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +69,7 @@
             this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.lbNombreDias = new System.Windows.Forms.Label();
             this.lbDias = new System.Windows.Forms.Label();
+            this.btnNuevoCliente = new System.Windows.Forms.Button();
             this.pbcListaCliente = new Proyecto.Presentacion.Help.PictureCircular();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCliente)).BeginInit();
             this.contextMenuCliente.SuspendLayout();
@@ -100,19 +100,6 @@
             this.label1.Size = new System.Drawing.Size(151, 16);
             this.label1.TabIndex = 24;
             this.label1.Text = "Buscar por Nombre o CI";
-            // 
-            // btnNuevoCliente
-            // 
-            this.btnNuevoCliente.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.btnNuevoCliente.Enabled = false;
-            this.btnNuevoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoCliente.Location = new System.Drawing.Point(16, 35);
-            this.btnNuevoCliente.Name = "btnNuevoCliente";
-            this.btnNuevoCliente.Size = new System.Drawing.Size(121, 36);
-            this.btnNuevoCliente.TabIndex = 22;
-            this.btnNuevoCliente.Text = "Nuevo Cliente";
-            this.btnNuevoCliente.UseVisualStyleBackColor = true;
-            this.btnNuevoCliente.Click += new System.EventHandler(this.btnNuevoCliente_Click);
             // 
             // dgvCliente
             // 
@@ -356,7 +343,7 @@
             this.groupBox1.Size = new System.Drawing.Size(288, 93);
             this.groupBox1.TabIndex = 73;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Funciones";
+            this.groupBox1.Text = "Cliente";
             // 
             // groupBox2
             // 
@@ -409,6 +396,19 @@
             this.lbDias.TabIndex = 104;
             this.lbDias.Text = "Di";
             this.lbDias.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnNuevoCliente
+            // 
+            this.btnNuevoCliente.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.btnNuevoCliente.Enabled = false;
+            this.btnNuevoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoCliente.Location = new System.Drawing.Point(16, 35);
+            this.btnNuevoCliente.Name = "btnNuevoCliente";
+            this.btnNuevoCliente.Size = new System.Drawing.Size(121, 36);
+            this.btnNuevoCliente.TabIndex = 22;
+            this.btnNuevoCliente.Text = "Nuevo Cliente";
+            this.btnNuevoCliente.UseVisualStyleBackColor = true;
+            this.btnNuevoCliente.Click += new System.EventHandler(this.btnNuevoCliente_Click);
             // 
             // pbcListaCliente
             // 

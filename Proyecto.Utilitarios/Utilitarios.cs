@@ -85,7 +85,7 @@ namespace Proyecto.Utilitarios
         public static Int64 IdFactura;
         public static Int64 RangoInicial=100;
         public static Int64 RangoFinal=500;
-        public static DateTime FechaLimiteEmision=Convert.ToDateTime("08/11/2019");
+        public static DateTime FechaLimiteEmision=Convert.ToDateTime("08/12/2020");
         public static string CodigoAutorizacion ="263401900065787";
         public static string LlaveDosificacion = "zZ7Z]xssKqkEf_6K9uH(EcV+%x+u[Cca9T%+_$kiLjT8(zr3T9b5Fx2xG-D+_EBS";
 

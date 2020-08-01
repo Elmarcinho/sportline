@@ -12,6 +12,9 @@ namespace Proyecto.Datos
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
+    using System.Data.Objects;
+    using System.Data.Objects.DataClasses;
+    using System.Linq;
     
     public partial class dbGimnasioSportLineEntities : DbContext
     {
@@ -102,5 +105,14 @@ namespace Proyecto.Datos
         public DbSet<VUsuario> VUsuario { get; set; }
         public DbSet<VUsuarioActivo> VUsuarioActivo { get; set; }
         public DbSet<VUsuarioRolPermisos> VUsuarioRolPermisos { get; set; }
+    
+        public virtual ObjectResult<Nullable<int>> sp_VerificarPersonaExiste(Nullable<int> cedula)
+        {
+            var cedulaParameter = cedula.HasValue ?
+                new ObjectParameter("cedula", cedula) :
+                new ObjectParameter("cedula", typeof(int));
+    
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Nullable<int>>("sp_VerificarPersonaExiste", cedulaParameter);
+        }
     }
 }

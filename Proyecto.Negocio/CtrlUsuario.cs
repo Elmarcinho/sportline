@@ -8,7 +8,6 @@ using System.Transactions;
 
 
 
-
 namespace Proyecto.Negocio
 {
     public class CtrlUsuario : Contexto
@@ -29,6 +28,8 @@ namespace Proyecto.Negocio
                 return 1;
             }
         }
+
+
         public bool InsertarUsuario(Usuario ObjUsuario)
         {
             using (TransactionScope Transaccion = new TransactionScope())

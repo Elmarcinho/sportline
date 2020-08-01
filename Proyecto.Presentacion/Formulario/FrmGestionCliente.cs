@@ -68,6 +68,7 @@ namespace Proyecto.Presentacion.Formulario
                 FCli.txtNombreCliente.Text = dgvCliente.CurrentRow.Cells[2].Value.ToString();
                 FCli.txtApp.Text = dgvCliente.CurrentRow.Cells[3].Value.ToString();
                 FCli.txtApm.Text = dgvCliente.CurrentRow.Cells[4].Value.ToString();
+                Utilitarios.Utilitarios.CedulaIdendidad = long.Parse(dgvCliente.CurrentRow.Cells[5].Value.ToString());
                 FCli.txtCiNit.Text = dgvCliente.CurrentRow.Cells[5].Value.ToString();
                 FCli.txtEmail.Text = dgvCliente.CurrentRow.Cells[9].Value.ToString();
                 FCli.pbcCliente.SizeMode = PictureBoxSizeMode.StretchImage;//Acomoda la imagen al tamaño del picture
