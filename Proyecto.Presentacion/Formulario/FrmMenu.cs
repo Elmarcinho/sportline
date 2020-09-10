@@ -1370,56 +1370,57 @@ namespace Proyecto.Presentacion.Formulario
             if(MessageBox.Show("¿Estás seguro de Cerrar Session?", "Sistema de Gestión y Ventas",
                 MessageBoxButtons.YesNo,MessageBoxIcon.Question)==DialogResult.Yes)
             {
-                //if (Application.OpenForms["FrmCliente"] != null)
-                //{
-                //    Application.OpenForms["FrmCliente"].Close();
-                //}
-                //if (Application.OpenForms["FrmEmpleado"] != null)
-                //{
-                //    Application.OpenForms["FrmEmpleado"].Close();
-                //}
-                //if (Application.OpenForms["FrmCategoria"] != null)
-                //{
-                //    Application.OpenForms["FrmCategoria"].Close();
-                //}
-                //if (Application.OpenForms["FrmPagoCredito"] != null)
-                //{
-                //    Application.OpenForms["FrmPagoCredito"].Close();
-                //}
-                //if (Application.OpenForms["FrmProducto"] != null)
-                //{
-                //    Application.OpenForms["FrmProducto"].Close();
-                //}
-                //if (Application.OpenForms["FrmServicio"] != null)
-                //{
-                //    Application.OpenForms["FrmServicio"].Close();
-                //}
-                //if (Application.OpenForms["FrmVentaProducto"] != null)
-                //{
-                //    Application.OpenForms["FrmVentaProducto"].Close();
-                //}
-                //if (Application.OpenForms["FrmReporte"] != null)
-                //{
-                //    Application.OpenForms["FrmReporte"].Close();
-                //}
-                //if (Application.OpenForms["FrmRptFactura"] != null)
-                //{
-                //    Application.OpenForms["FrmRptFactura"].Close();
-                //}
-                //if (Application.OpenForms["FrmInforme"] != null)
-                //{
-                //    Application.OpenForms["FrmInforme"].Close();
-                //}
-                //if (Application.OpenForms["FrmDescuento"] != null)
-                //{
-                //    Application.OpenForms["FrmDescuento"].Close();
-                //}
+                if (Application.OpenForms["FrmCliente"] != null)
+                {
+                    Application.OpenForms["FrmCliente"].Close();
+                }
+                if (Application.OpenForms["FrmEmpleado"] != null)
+                {
+                    Application.OpenForms["FrmEmpleado"].Close();
+                }
+                if (Application.OpenForms["FrmCategoria"] != null)
+                {
+                    Application.OpenForms["FrmCategoria"].Close();
+                }
+                if (Application.OpenForms["FrmPagoCredito"] != null)
+                {
+                    Application.OpenForms["FrmPagoCredito"].Close();
+                }
+                if (Application.OpenForms["FrmProducto"] != null)
+                {
+                    Application.OpenForms["FrmProducto"].Close();
+                }
+                if (Application.OpenForms["FrmServicio"] != null)
+                {
+                    Application.OpenForms["FrmServicio"].Close();
+                }
+                if (Application.OpenForms["FrmVentaProducto"] != null)
+                {
+                    Application.OpenForms["FrmVentaProducto"].Close();
+                }
+                if (Application.OpenForms["FrmReporte"] != null)
+                {
+                    Application.OpenForms["FrmReporte"].Close();
+                }
+                if (Application.OpenForms["FrmRptFactura"] != null)
+                {
+                    Application.OpenForms["FrmRptFactura"].Close();
+                }
+                if (Application.OpenForms["FrmInforme"] != null)
+                {
+                    Application.OpenForms["FrmInforme"].Close();
+                }
+                if (Application.OpenForms["FrmDescuento"] != null)
+                {
+                    Application.OpenForms["FrmDescuento"].Close();
+                }
                 BitacoraLogin objBitacora = new BitacoraLogin();
                 objBitacora.IdBitLogin = Utilitarios.Utilitarios.IdBitacoraLogin;
                 objBitacora.HoraSalida = TimeSpan.Parse(DateTime.Now.ToString("HH:mm:ss"));
                 objCtrlBitacora.ModificarBitacoraLogin(objBitacora);
 
-                Application.Exit();
+                this.Close();
+                //Application.Exit();
             }
         }
 

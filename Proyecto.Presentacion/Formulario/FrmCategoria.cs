@@ -24,38 +24,46 @@ namespace Proyecto.Presentacion.Formulario
         {
             try
             {
-                if (Utilitarios.Utilitarios.Evento == 0)
+                if (txtCategoria.Text!=string.Empty && txtCategoria.Text.Length >= 3)
                 {
-                    Categoria objCategoria = new Categoria();
-                    objCategoria.IdCategoria = objCtrlCategoria.GenerarID();
-                    objCategoria.NombreCategoria = this.txtCategoria.Text;
-                    objCategoria.EstadoCategoria = Convert.ToInt32(Utilitarios.Utilitarios.EstadoCategoria);
-                    if (objCtrlCategoria.InsertarCategoria(objCategoria))
+                    if (Utilitarios.Utilitarios.Evento == 0)
                     {
-                        MessageBox.Show("Categoria registrado con éxito!", "Sistema de Ventas");
-                        this.Close();
+                        Categoria objCategoria = new Categoria();
+                        objCategoria.IdCategoria = objCtrlCategoria.GenerarID();
+                        objCategoria.NombreCategoria = this.txtCategoria.Text;
+                        objCategoria.EstadoCategoria = Convert.ToInt32(Utilitarios.Utilitarios.EstadoCategoria);
+
+                        if (objCtrlCategoria.InsertarCategoria(objCategoria))
+                        {
+                            MessageBox.Show("Categoria registrado con éxito!", "Sistema de Ventas");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error en el registro de Categoria.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                     else
                     {
-                        MessageBox.Show("Error en el registro de Categoria.", "Sistema de Ventas",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                        Categoria objCategoria = new Categoria();
+                        objCategoria.IdCategoria = Utilitarios.Utilitarios.IdCategoria;
+                        objCategoria.NombreCategoria = txtCategoria.Text;
+                        objCategoria.EstadoCategoria = Convert.ToInt32(Utilitarios.Utilitarios.EstadoCategoria);
+
+                        if (objCtrlCategoria.ModificarCategoria(objCategoria))
+                        {
+                            MessageBox.Show("Categoria actualizado con éxito!", "Sistema de Ventas");
+                            this.Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Error en la actualizacion de Categoria.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
                     }
                 }
                 else
                 {
-                    Categoria objCategoria = new Categoria();
-                    objCategoria.IdCategoria = Utilitarios.Utilitarios.IdCategoria;
-                    objCategoria.NombreCategoria = txtCategoria.Text;
-                    objCategoria.EstadoCategoria = Convert.ToInt32(Utilitarios.Utilitarios.EstadoCategoria);
-
-                    if (objCtrlCategoria.ModificarCategoria(objCategoria))
-                    {
-                        MessageBox.Show("Categoria actualizado con éxito!", "Sistema de Ventas");
-                        this.Close();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Error en la actualizacion de Categoria.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
+                    MessageBox.Show("Ingrese nombre de la categoria.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }

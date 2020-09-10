@@ -156,9 +156,9 @@ namespace Proyecto.Presentacion.Formulario
                 {
                     if ((txtCedulaNit.Text != string.Empty || txtCedulaNit.Text != "") && (txtNombreCliente.Text != string.Empty))
                     {
-                        if (Convert.ToInt32(cbFormaPago.SelectedValue) != 0)
+                        if (Convert.ToInt32(dgvDetallePedidoServicio.Rows.Count) != 0)
                         {
-                            if (Convert.ToInt32(dgvDetallePedidoServicio.Rows.Count) != 0)
+                            if (Convert.ToInt32(cbFormaPago.SelectedValue) != 0)
                             {
                                 RNSolicitud objAuxSolicitud = new RNSolicitud();
                                 if (CargarObjetoSolicitud(ref objAuxSolicitud))
@@ -396,12 +396,14 @@ namespace Proyecto.Presentacion.Formulario
                             }
                             else
                             {
-                                MessageBox.Show("Por favor seleccione al menos un Servicio para realizar la solicitud.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                                pictBoxVentaSer3.Visible = true;
+                                MessageBox.Show("Favor seleccionar forma de pago.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Favor seleccionar forma de pago", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            pictBoxVentaSer2.Visible = true;
+                            MessageBox.Show("Por favor seleccione al menos un Servicio para realizar la solicitud.", "Sistema de Ventas", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
@@ -877,6 +879,72 @@ namespace Proyecto.Presentacion.Formulario
         private void txtCuotaInicial_KeyPress(object sender, KeyPressEventArgs e)
         {
             objRNValidar.Decimal(e, txtCuotaInicial);
+        }
+
+        private void groupBox3_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(this.txtCedulaNit.Text))
+                {
+                    pictBoxVentaSer1.BackColor = Color.Red;
+                    this.txtCedulaNit.BackColor = Color.LightYellow;
+                    this.txtCedulaNit.Focus();
+                    pictBoxVentaSer1.Visible = true;
+                }
+                else
+                {
+                    pictBoxVentaSer1.Visible = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void groupBox4_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Convert.ToInt32(dgvDetallePedidoServicio.Rows.Count) != 0)
+                {
+                    //pictBoxVentaSer2.BackColor = Color.Red;
+                    //pictBoxVentaSer2.Visible = true;
+                    pictBoxVentaSer2.Visible = false;
+                }
+                //else
+                //{
+                //    pictBoxVentaSer2.Visible = false;
+                //}
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void groupBox7_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbFormaPago.Text.Equals("--- Seleccionar ---"))
+                {
+                    pictBoxVentaSer3.BackColor = Color.Red;
+                    pictBoxVentaSer3.Visible = true;
+                }
+                else
+                {
+                    pictBoxVentaSer3.Visible = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

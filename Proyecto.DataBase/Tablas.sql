@@ -1153,11 +1153,13 @@ select * from VClienteSolicitudGeneral
 update Pago set IdPago=2 where IdPago=58
 Delete Servicio where IdServicio=5
 go
+select convert(varchar,FechaOperacion,103) as Fecha,* from BitacoraSolicitudVenta	
 select * from VClienteSolicitudGeneral vc where vc.CédulaIdentidad=8965698 order by vc.CodVenta desc 
-select * from Asistencia
-select * from Plazo  
+select * from Producto
+select * from Categoria  
 select * from VClienteGeneral
 select * from Horario ho inner join Turno tu on ho.IdTurno=tu.IdTurno
+select * from BitacoraSolicitudVenta
 
 
 

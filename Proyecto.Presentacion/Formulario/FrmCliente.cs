@@ -374,5 +374,24 @@ namespace Proyecto.Presentacion.Formulario
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void cbCiudadZonaCli_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbCiudadZonaCli.Text.Equals("         ----------- Seleccionar -----------"))
+                {
+                    pictureBox4.BackColor = Color.Red;
+                    this.cbCiudadZonaCli.BackColor = Color.LightYellow;
+                    pictureBox4.Visible = true;
+                }
+                else { pictureBox4.Visible = false; }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

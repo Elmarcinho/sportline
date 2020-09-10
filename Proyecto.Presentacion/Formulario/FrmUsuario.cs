@@ -90,8 +90,8 @@ namespace Proyecto.Presentacion.Formulario
                     {
                         if (txtContraseña.Text == txtRContraseña.Text)
                         {
-                            //if (objRNValidar.Complejidad(txtContraseña))
-                            //{
+                            if (objRNValidar.Complejidad(txtContraseña))
+                            {
                                 if (Utilitarios.Utilitarios.Evento == 0)
                                 {
                                     Usuario objUsuario = new Usuario();
@@ -134,7 +134,7 @@ namespace Proyecto.Presentacion.Formulario
                                         MessageBox.Show("Error en la actualizacion de Usuario.","Sistema de Ventas",MessageBoxButtons.OK,MessageBoxIcon.Error);
                                     }
                                 }
-                            //}
+                            }
                         }
                         else { MessageBox.Show("La contraseña no coinciden","Sistema de Ventas",MessageBoxButtons.OK,MessageBoxIcon.Warning); }
                     }
@@ -174,7 +174,7 @@ namespace Proyecto.Presentacion.Formulario
         {
             if(txtContraseña.TextLength>0)
             {
-                lbErrorUsu.Text = "      La contraseña tiene que estar compuesta\n      por: Mayúscula, Minúscula, Número y\n      un Carácter especial @,#,%,$ \n      Ej: PassWord12$";
+                lbErrorUsu.Text = "      La contraseña tiene que estar compuesta\n      por: Mayúscula, Minúscula, Número y un\n      Carácter Especial '@,#,%,$'  Ej: PassWord12$";
                 lbErrorUsu.Visible = true;
             }
         }
@@ -193,6 +193,23 @@ namespace Proyecto.Presentacion.Formulario
                 }
                 else { form.BringToFront(); }
                 return form;
+            }
+        }
+
+        private void chkBoxPassword_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkBoxPassword.Checked == true)
+            {
+                if (txtRContraseña.UseSystemPasswordChar == true)
+                {
+                    txtContraseña.UseSystemPasswordChar = false;
+                    txtRContraseña.UseSystemPasswordChar = false;
+                }
+            }
+            else
+            {
+                txtContraseña.UseSystemPasswordChar = true;
+                txtRContraseña.UseSystemPasswordChar = true;
             }
         }
     }

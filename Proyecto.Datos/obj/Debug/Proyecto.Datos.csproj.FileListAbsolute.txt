@@ -30,3 +30,11 @@ C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto
 C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\obj\Debug\Proyecto.Datos.dll
 C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\obj\Debug\Proyecto.Datos.pdb
 C:\Users\Viviana\Desktop\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\obj\Debug\Proyecto.Datos.csprojResolveAssemblyReference.cache
+D:\Elmarcinho\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\bin\Debug\Proyecto.Datos.dll.config
+D:\Elmarcinho\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\bin\Debug\Proyecto.Datos.dll
+D:\Elmarcinho\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\bin\Debug\Proyecto.Datos.pdb
+D:\Elmarcinho\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\bin\Debug\EntityFramework.dll
+D:\Elmarcinho\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\bin\Debug\EntityFramework.xml
+D:\Elmarcinho\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\obj\Debug\Proyecto.Datos.dll
+D:\Elmarcinho\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\obj\Debug\Proyecto.Datos.pdb
+D:\Elmarcinho\MODALIDAD UPDS\SportLine\Gimnasio.Presentacion\Proyecto.Datos\obj\Debug\Proyecto.Datos.csprojResolveAssemblyReference.cache

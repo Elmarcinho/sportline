@@ -6,7 +6,7 @@
     <DataSource Name="DataSourceDemandaServicio">
       <ConnectionProperties>
         <DataProvider>SQL</DataProvider>
-        <ConnectString>Data Source=TOSHIBA-VIVI;Initial Catalog=dbGimnasioSportLine</ConnectString>
+        <ConnectString>Data Source=VIVIANA-MURGUIA;Initial Catalog=dbGimnasioSportLine</ConnectString>
         <IntegratedSecurity>true</IntegratedSecurity>
       </ConnectionProperties>
       <rd:SecurityType>Integrated</rd:SecurityType>

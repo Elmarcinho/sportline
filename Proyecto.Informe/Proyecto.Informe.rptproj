@@ -20,7 +20,7 @@
       <Options>
         <OutputPath>bin\Debug</OutputPath>
         <TargetServerVersion>SSRS2008R2</TargetServerVersion>
-        <TargetServerURL>http://toshiba-vivi:90/ReportServerVivi</TargetServerURL>
+        <TargetServerURL>http://viviana-murguia:90/ReportServer</TargetServerURL>
         <TargetFolder>Proyecto.Informe</TargetFolder>
         <TargetDataSourceFolder>Orígenes de datos</TargetDataSourceFolder>
         <TargetDatasetFolder>Conjuntos de datos</TargetDatasetFolder>

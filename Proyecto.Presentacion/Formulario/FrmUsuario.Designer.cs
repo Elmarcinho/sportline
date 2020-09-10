@@ -44,13 +44,14 @@
             this.lblEstadoUsuario = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.lbErrorUsu = new System.Windows.Forms.Label();
+            this.chkBoxPassword = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // cbRol
             // 
             this.cbRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbRol.FormattingEnabled = true;
-            this.cbRol.Location = new System.Drawing.Point(153, 262);
+            this.cbRol.Location = new System.Drawing.Point(153, 264);
             this.cbRol.Name = "cbRol";
             this.cbRol.Size = new System.Drawing.Size(176, 24);
             this.cbRol.TabIndex = 11;
@@ -108,7 +109,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(27, 226);
+            this.label3.Location = new System.Drawing.Point(27, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 16);
             this.label3.TabIndex = 13;
@@ -117,7 +118,7 @@
             // txtRContraseña
             // 
             this.txtRContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtRContraseña.Location = new System.Drawing.Point(153, 223);
+            this.txtRContraseña.Location = new System.Drawing.Point(153, 225);
             this.txtRContraseña.Name = "txtRContraseña";
             this.txtRContraseña.Size = new System.Drawing.Size(176, 22);
             this.txtRContraseña.TabIndex = 12;
@@ -127,7 +128,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(27, 265);
+            this.label4.Location = new System.Drawing.Point(27, 267);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(29, 16);
             this.label4.TabIndex = 14;
@@ -167,7 +168,7 @@
             // 
             this.cbEstadoUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbEstadoUsuario.FormattingEnabled = true;
-            this.cbEstadoUsuario.Location = new System.Drawing.Point(153, 301);
+            this.cbEstadoUsuario.Location = new System.Drawing.Point(153, 303);
             this.cbEstadoUsuario.Name = "cbEstadoUsuario";
             this.cbEstadoUsuario.Size = new System.Drawing.Size(176, 24);
             this.cbEstadoUsuario.TabIndex = 60;
@@ -177,7 +178,7 @@
             // 
             this.lblEstadoUsuario.AutoSize = true;
             this.lblEstadoUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEstadoUsuario.Location = new System.Drawing.Point(27, 309);
+            this.lblEstadoUsuario.Location = new System.Drawing.Point(27, 311);
             this.lblEstadoUsuario.Name = "lblEstadoUsuario";
             this.lblEstadoUsuario.Size = new System.Drawing.Size(101, 16);
             this.lblEstadoUsuario.TabIndex = 61;
@@ -202,19 +203,31 @@
             this.lbErrorUsu.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.lbErrorUsu.Image = global::Proyecto.Presentacion.Properties.Resources.warning;
             this.lbErrorUsu.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.lbErrorUsu.Location = new System.Drawing.Point(335, 183);
+            this.lbErrorUsu.Location = new System.Drawing.Point(337, 171);
             this.lbErrorUsu.Name = "lbErrorUsu";
             this.lbErrorUsu.Size = new System.Drawing.Size(87, 15);
             this.lbErrorUsu.TabIndex = 72;
             this.lbErrorUsu.Text = "Error Mensaje";
             this.lbErrorUsu.Visible = false;
             // 
+            // chkBoxPassword
+            // 
+            this.chkBoxPassword.AutoSize = true;
+            this.chkBoxPassword.Location = new System.Drawing.Point(338, 228);
+            this.chkBoxPassword.Name = "chkBoxPassword";
+            this.chkBoxPassword.Size = new System.Drawing.Size(98, 17);
+            this.chkBoxPassword.TabIndex = 73;
+            this.chkBoxPassword.Text = "Ver contraseña";
+            this.chkBoxPassword.UseVisualStyleBackColor = true;
+            this.chkBoxPassword.CheckedChanged += new System.EventHandler(this.chkBoxPassword_CheckedChanged);
+            // 
             // FrmUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Window;
-            this.ClientSize = new System.Drawing.Size(594, 425);
+            this.ClientSize = new System.Drawing.Size(649, 425);
+            this.Controls.Add(this.chkBoxPassword);
             this.Controls.Add(this.lbErrorUsu);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.lblEstadoUsuario);
@@ -260,5 +273,6 @@
         public System.Windows.Forms.Label lblEstadoUsuario;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label lbErrorUsu;
+        private System.Windows.Forms.CheckBox chkBoxPassword;
     }
 }

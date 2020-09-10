@@ -400,6 +400,7 @@ namespace Proyecto.Presentacion.Formulario
                 this.CargarGrillaRol();
             }
             this.CargarComboRolAsignar();
+            this.CargarComboRolDetalle();
 
         }
         private void dgvRoles_CellClick(object sender, DataGridViewCellEventArgs e)

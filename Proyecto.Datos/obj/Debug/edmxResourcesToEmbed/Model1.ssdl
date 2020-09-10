@@ -1614,7 +1614,7 @@ advertencia 6002: La tabla o vista 'dbGimnasioSportLine.dbo.VUsuarioRolPermisos'
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Function Name="sp_VerificarClienteExiste" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+  <Function Name="sp_VerificarPersonaExiste" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
     <Parameter Name="cedula" Type="int" Mode="In" />
   </Function>
   <EntityContainer Name="dbGimnasioSportLineModelStoreContainer">

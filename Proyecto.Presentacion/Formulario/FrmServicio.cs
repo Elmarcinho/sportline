@@ -242,5 +242,73 @@ namespace Proyecto.Presentacion.Formulario
             txtPrecioQuincenal.Text = PrecioQuincenal.ToString();
         }
 
+        private void txtNombreServicio_Leave(object sender, EventArgs e)
+        {
+            this.pictBoxSer1.Visible = false;
+        }
+
+        private void txtNombreServicio_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(this.txtNombreServicio.Text) || txtNombreServicio.Text.Length < 3)
+                {
+                    pictBoxSer1.BackColor = Color.Red;
+                    this.txtNombreServicio.BackColor = Color.LightYellow;
+                    pictBoxSer1.Visible = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtPrecioDiario_Leave(object sender, EventArgs e)
+        {
+            this.pictBoxSer2.Visible = false;
+        }
+
+        private void txtPrecioDiario_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(this.txtPrecioDiario.Text))
+                {
+                    pictBoxSer2.BackColor = Color.Red;
+                    this.txtPrecioDiario.BackColor = Color.LightYellow;
+                    pictBoxSer2.Visible = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtPrecioMensual_Leave(object sender, EventArgs e)
+        {
+            this.pictBoxSer3.Visible = false;
+        }
+
+        private void txtPrecioMensual_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(this.txtPrecioMensual.Text))
+                {
+                    pictBoxSer3.BackColor = Color.Red;
+                    this.txtPrecioMensual.BackColor = Color.LightYellow;
+                    pictBoxSer3.Visible = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

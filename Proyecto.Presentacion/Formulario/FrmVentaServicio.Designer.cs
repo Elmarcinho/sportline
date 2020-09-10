@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.cbDescuento = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -93,6 +93,9 @@
             this.label18 = new System.Windows.Forms.Label();
             this.txtMontoCredito = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
+            this.pictBoxVentaSer1 = new System.Windows.Forms.PictureBox();
+            this.pictBoxVentaSer2 = new System.Windows.Forms.PictureBox();
+            this.pictBoxVentaSer3 = new System.Windows.Forms.PictureBox();
             this.groupBox2.SuspendLayout();
             this.groupBox7.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -101,6 +104,9 @@
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetallePedidoServicio)).BeginInit();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaSer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaSer2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaSer3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -167,6 +173,7 @@
             this.groupBox7.TabIndex = 81;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "FORMA DE PAGO";
+            this.groupBox7.Validated += new System.EventHandler(this.groupBox7_Validated);
             // 
             // cbFormaPago
             // 
@@ -242,6 +249,7 @@
             this.groupBox4.TabIndex = 76;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "SERVICIO";
+            this.groupBox4.Validated += new System.EventHandler(this.groupBox4_Validated);
             // 
             // label6
             // 
@@ -407,6 +415,7 @@
             this.groupBox3.TabIndex = 88;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "CLIENTE";
+            this.groupBox3.Validated += new System.EventHandler(this.groupBox3_Validated);
             // 
             // btnNuevoCliente
             // 
@@ -476,14 +485,14 @@
             // 
             this.dgvDetallePedidoServicio.AllowUserToAddRows = false;
             this.dgvDetallePedidoServicio.BackgroundColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDetallePedidoServicio.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDetallePedidoServicio.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDetallePedidoServicio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetallePedidoServicio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.IdServicio,
@@ -497,14 +506,14 @@
             this.RangoDias,
             this.Total,
             this.btnQuitarServicio});
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDetallePedidoServicio.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDetallePedidoServicio.DefaultCellStyle = dataGridViewCellStyle7;
             this.dgvDetallePedidoServicio.Location = new System.Drawing.Point(35, 398);
             this.dgvDetallePedidoServicio.Name = "dgvDetallePedidoServicio";
             this.dgvDetallePedidoServicio.Size = new System.Drawing.Size(744, 130);
@@ -516,8 +525,8 @@
             // 
             // IdServicio
             // 
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.IdServicio.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.IdServicio.DefaultCellStyle = dataGridViewCellStyle2;
             this.IdServicio.HeaderText = "Cod.";
             this.IdServicio.Name = "IdServicio";
             this.IdServicio.ReadOnly = true;
@@ -533,8 +542,8 @@
             // 
             // Turno
             // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Turno.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Turno.DefaultCellStyle = dataGridViewCellStyle3;
             this.Turno.HeaderText = "Turno";
             this.Turno.Name = "Turno";
             this.Turno.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -548,10 +557,10 @@
             // 
             // Precio
             // 
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            dataGridViewCellStyle11.Format = "N1";
-            dataGridViewCellStyle11.NullValue = null;
-            this.Precio.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            dataGridViewCellStyle4.Format = "N1";
+            dataGridViewCellStyle4.NullValue = null;
+            this.Precio.DefaultCellStyle = dataGridViewCellStyle4;
             this.Precio.HeaderText = "Precio";
             this.Precio.Name = "Precio";
             this.Precio.ReadOnly = true;
@@ -560,8 +569,8 @@
             // 
             // Cantidad
             // 
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Cantidad.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Cantidad.DefaultCellStyle = dataGridViewCellStyle5;
             this.Cantidad.HeaderText = "Cantidad";
             this.Cantidad.Name = "Cantidad";
             this.Cantidad.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -587,8 +596,8 @@
             // 
             // Total
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Total.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Total.DefaultCellStyle = dataGridViewCellStyle6;
             this.Total.HeaderText = "Total";
             this.Total.Name = "Total";
             this.Total.ReadOnly = true;
@@ -746,6 +755,36 @@
             this.label19.TabIndex = 1;
             this.label19.Text = "Saldo Crédito:";
             // 
+            // pictBoxVentaSer1
+            // 
+            this.pictBoxVentaSer1.BackColor = System.Drawing.Color.Red;
+            this.pictBoxVentaSer1.Location = new System.Drawing.Point(33, 79);
+            this.pictBoxVentaSer1.Name = "pictBoxVentaSer1";
+            this.pictBoxVentaSer1.Size = new System.Drawing.Size(514, 99);
+            this.pictBoxVentaSer1.TabIndex = 125;
+            this.pictBoxVentaSer1.TabStop = false;
+            this.pictBoxVentaSer1.Visible = false;
+            // 
+            // pictBoxVentaSer2
+            // 
+            this.pictBoxVentaSer2.BackColor = System.Drawing.Color.Red;
+            this.pictBoxVentaSer2.Location = new System.Drawing.Point(33, 180);
+            this.pictBoxVentaSer2.Name = "pictBoxVentaSer2";
+            this.pictBoxVentaSer2.Size = new System.Drawing.Size(747, 119);
+            this.pictBoxVentaSer2.TabIndex = 126;
+            this.pictBoxVentaSer2.TabStop = false;
+            this.pictBoxVentaSer2.Visible = false;
+            // 
+            // pictBoxVentaSer3
+            // 
+            this.pictBoxVentaSer3.BackColor = System.Drawing.Color.Red;
+            this.pictBoxVentaSer3.Location = new System.Drawing.Point(33, 301);
+            this.pictBoxVentaSer3.Name = "pictBoxVentaSer3";
+            this.pictBoxVentaSer3.Size = new System.Drawing.Size(178, 86);
+            this.pictBoxVentaSer3.TabIndex = 127;
+            this.pictBoxVentaSer3.TabStop = false;
+            this.pictBoxVentaSer3.Visible = false;
+            // 
             // FrmVentaServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -770,6 +809,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.pictBoxVentaSer1);
+            this.Controls.Add(this.pictBoxVentaSer2);
+            this.Controls.Add(this.pictBoxVentaSer3);
             this.Name = "FrmVentaServicio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Información - Solicitud de Servicio";
@@ -786,6 +828,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetallePedidoServicio)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaSer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaSer2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaSer3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -851,5 +896,8 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn RangoDias;
         private System.Windows.Forms.DataGridViewTextBoxColumn Total;
         private System.Windows.Forms.DataGridViewButtonColumn btnQuitarServicio;
+        private System.Windows.Forms.PictureBox pictBoxVentaSer1;
+        private System.Windows.Forms.PictureBox pictBoxVentaSer2;
+        private System.Windows.Forms.PictureBox pictBoxVentaSer3;
     }
 }

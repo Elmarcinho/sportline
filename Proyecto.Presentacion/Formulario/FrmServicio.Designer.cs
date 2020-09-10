@@ -46,6 +46,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.cbRangoDia = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.pictBoxSer1 = new System.Windows.Forms.PictureBox();
+            this.pictBoxSer2 = new System.Windows.Forms.PictureBox();
+            this.pictBoxSer3 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSer1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSer2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSer3)).BeginInit();
             this.SuspendLayout();
             // 
             // txtPrecioDiario
@@ -57,6 +63,8 @@
             this.txtPrecioDiario.TabIndex = 111;
             this.txtPrecioDiario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPrecioDiario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioVentaServicio_KeyPress);
+            this.txtPrecioDiario.Leave += new System.EventHandler(this.txtPrecioDiario_Leave);
+            this.txtPrecioDiario.Validated += new System.EventHandler(this.txtPrecioDiario_Validated);
             // 
             // label3
             // 
@@ -115,6 +123,8 @@
             this.txtNombreServicio.Name = "txtNombreServicio";
             this.txtNombreServicio.Size = new System.Drawing.Size(240, 22);
             this.txtNombreServicio.TabIndex = 98;
+            this.txtNombreServicio.Leave += new System.EventHandler(this.txtNombreServicio_Leave);
+            this.txtNombreServicio.Validated += new System.EventHandler(this.txtNombreServicio_Validated);
             // 
             // label16
             // 
@@ -147,6 +157,8 @@
             this.txtPrecioMensual.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPrecioMensual.TextChanged += new System.EventHandler(this.txtPrecioMensual_TextChanged);
             this.txtPrecioMensual.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioMensual_KeyPress);
+            this.txtPrecioMensual.Leave += new System.EventHandler(this.txtPrecioMensual_Leave);
+            this.txtPrecioMensual.Validated += new System.EventHandler(this.txtPrecioMensual_Validated);
             // 
             // label5
             // 
@@ -234,6 +246,36 @@
             this.label8.TabIndex = 122;
             this.label8.Text = "Dias";
             // 
+            // pictBoxSer1
+            // 
+            this.pictBoxSer1.BackColor = System.Drawing.Color.Red;
+            this.pictBoxSer1.Location = new System.Drawing.Point(155, 104);
+            this.pictBoxSer1.Name = "pictBoxSer1";
+            this.pictBoxSer1.Size = new System.Drawing.Size(244, 26);
+            this.pictBoxSer1.TabIndex = 123;
+            this.pictBoxSer1.TabStop = false;
+            this.pictBoxSer1.Visible = false;
+            // 
+            // pictBoxSer2
+            // 
+            this.pictBoxSer2.BackColor = System.Drawing.Color.Red;
+            this.pictBoxSer2.Location = new System.Drawing.Point(155, 234);
+            this.pictBoxSer2.Name = "pictBoxSer2";
+            this.pictBoxSer2.Size = new System.Drawing.Size(104, 26);
+            this.pictBoxSer2.TabIndex = 124;
+            this.pictBoxSer2.TabStop = false;
+            this.pictBoxSer2.Visible = false;
+            // 
+            // pictBoxSer3
+            // 
+            this.pictBoxSer3.BackColor = System.Drawing.Color.Red;
+            this.pictBoxSer3.Location = new System.Drawing.Point(155, 296);
+            this.pictBoxSer3.Name = "pictBoxSer3";
+            this.pictBoxSer3.Size = new System.Drawing.Size(104, 26);
+            this.pictBoxSer3.TabIndex = 125;
+            this.pictBoxSer3.TabStop = false;
+            this.pictBoxSer3.Visible = false;
+            // 
             // FrmServicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -258,6 +300,9 @@
             this.Controls.Add(this.txtDescripcionServicio);
             this.Controls.Add(this.txtNombreServicio);
             this.Controls.Add(this.label16);
+            this.Controls.Add(this.pictBoxSer1);
+            this.Controls.Add(this.pictBoxSer2);
+            this.Controls.Add(this.pictBoxSer3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -265,6 +310,9 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Información del Servicio";
             this.Load += new System.EventHandler(this.FrmServicio_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSer1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSer2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxSer3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,5 +338,8 @@
         public System.Windows.Forms.ComboBox cbRangoDia;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.DateTimePicker dtpHoraInicio;
+        private System.Windows.Forms.PictureBox pictBoxSer1;
+        private System.Windows.Forms.PictureBox pictBoxSer2;
+        private System.Windows.Forms.PictureBox pictBoxSer3;
     }
 }

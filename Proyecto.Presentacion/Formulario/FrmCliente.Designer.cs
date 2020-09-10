@@ -358,6 +358,7 @@
             this.cbCiudadZonaCli.Name = "cbCiudadZonaCli";
             this.cbCiudadZonaCli.Size = new System.Drawing.Size(217, 24);
             this.cbCiudadZonaCli.TabIndex = 74;
+            this.cbCiudadZonaCli.Validated += new System.EventHandler(this.cbCiudadZonaCli_Validated);
             // 
             // btnIniciarWebCam
             // 
@@ -415,7 +416,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Red;
             this.pictureBox3.Location = new System.Drawing.Point(132, 165);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(127, 27);
+            this.pictureBox3.Size = new System.Drawing.Size(127, 26);
             this.pictureBox3.TabIndex = 80;
             this.pictureBox3.TabStop = false;
             this.pictureBox3.Visible = false;
@@ -423,9 +424,9 @@
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.Red;
-            this.pictureBox4.Location = new System.Drawing.Point(383, 382);
+            this.pictureBox4.Location = new System.Drawing.Point(383, 381);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(233, 27);
+            this.pictureBox4.Size = new System.Drawing.Size(224, 30);
             this.pictureBox4.TabIndex = 81;
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Visible = false;

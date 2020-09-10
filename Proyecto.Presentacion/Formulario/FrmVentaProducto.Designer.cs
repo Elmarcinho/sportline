@@ -86,6 +86,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.txtCuotaInicial = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pictBoxVentaPro1 = new System.Windows.Forms.PictureBox();
+            this.pictBoxVentaPro2 = new System.Windows.Forms.PictureBox();
+            this.pictBoxVentaPro3 = new System.Windows.Forms.PictureBox();
             this.groupBox5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -93,6 +96,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetallePedidoProducto)).BeginInit();
             this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaPro1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaPro2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaPro3)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox5
@@ -102,7 +108,7 @@
             this.groupBox5.Controls.Add(this.label3);
             this.groupBox5.Controls.Add(this.txtIdpedido);
             this.groupBox5.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(568, 66);
+            this.groupBox5.Location = new System.Drawing.Point(568, 65);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(221, 95);
             this.groupBox5.TabIndex = 31;
@@ -223,6 +229,7 @@
             this.groupBox4.TabIndex = 27;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "PRODUCTO";
+            this.groupBox4.Validated += new System.EventHandler(this.groupBox4_Validated);
             // 
             // btnBuscarProducto
             // 
@@ -307,12 +314,13 @@
             this.groupBox3.Controls.Add(this.txtNombreCliente);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(46, 66);
+            this.groupBox3.Location = new System.Drawing.Point(46, 65);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(510, 95);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "CLIENTE";
+            this.groupBox3.Validated += new System.EventHandler(this.groupBox3_Validated);
             // 
             // btnNuevoCliente
             // 
@@ -505,6 +513,7 @@
             this.groupBox7.TabIndex = 32;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "FORMA DE PAGO";
+            this.groupBox7.Validated += new System.EventHandler(this.groupBox7_Validated);
             // 
             // cbFormaPago
             // 
@@ -687,6 +696,36 @@
             this.groupBox6.Text = "CRÉDITO";
             this.groupBox6.Visible = false;
             // 
+            // pictBoxVentaPro1
+            // 
+            this.pictBoxVentaPro1.BackColor = System.Drawing.Color.Red;
+            this.pictBoxVentaPro1.Location = new System.Drawing.Point(44, 63);
+            this.pictBoxVentaPro1.Name = "pictBoxVentaPro1";
+            this.pictBoxVentaPro1.Size = new System.Drawing.Size(514, 99);
+            this.pictBoxVentaPro1.TabIndex = 124;
+            this.pictBoxVentaPro1.TabStop = false;
+            this.pictBoxVentaPro1.Visible = false;
+            // 
+            // pictBoxVentaPro2
+            // 
+            this.pictBoxVentaPro2.BackColor = System.Drawing.Color.Red;
+            this.pictBoxVentaPro2.Location = new System.Drawing.Point(44, 163);
+            this.pictBoxVentaPro2.Name = "pictBoxVentaPro2";
+            this.pictBoxVentaPro2.Size = new System.Drawing.Size(747, 96);
+            this.pictBoxVentaPro2.TabIndex = 125;
+            this.pictBoxVentaPro2.TabStop = false;
+            this.pictBoxVentaPro2.Visible = false;
+            // 
+            // pictBoxVentaPro3
+            // 
+            this.pictBoxVentaPro3.BackColor = System.Drawing.Color.Red;
+            this.pictBoxVentaPro3.Location = new System.Drawing.Point(44, 260);
+            this.pictBoxVentaPro3.Name = "pictBoxVentaPro3";
+            this.pictBoxVentaPro3.Size = new System.Drawing.Size(251, 86);
+            this.pictBoxVentaPro3.TabIndex = 126;
+            this.pictBoxVentaPro3.TabStop = false;
+            this.pictBoxVentaPro3.Visible = false;
+            // 
             // FrmVentaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -710,6 +749,9 @@
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.dgvDetallePedidoProducto);
+            this.Controls.Add(this.pictBoxVentaPro1);
+            this.Controls.Add(this.pictBoxVentaPro2);
+            this.Controls.Add(this.pictBoxVentaPro3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "FrmVentaProducto";
@@ -727,6 +769,9 @@
             this.groupBox7.ResumeLayout(false);
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaPro1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaPro2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictBoxVentaPro3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -785,5 +830,8 @@
         private System.Windows.Forms.Label label11;
         public System.Windows.Forms.TextBox txtCuotaInicial;
         public System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.PictureBox pictBoxVentaPro1;
+        private System.Windows.Forms.PictureBox pictBoxVentaPro2;
+        private System.Windows.Forms.PictureBox pictBoxVentaPro3;
     }
 }

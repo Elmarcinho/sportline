@@ -126,7 +126,7 @@ namespace Proyecto.Presentacion.Formulario
                 {
                     case 1:
                         this.reportViewerReporte.ProcessingMode = ProcessingMode.Remote;
-                        this.reportViewerReporte.ServerReport.ReportServerUrl = new Uri("http://toshiba-vivi:90/ReportServerVivi");
+                        this.reportViewerReporte.ServerReport.ReportServerUrl = new Uri("http://viviana-murguia:90/ReportServer");
                         this.reportViewerReporte.ServerReport.ReportPath = "/Proyecto.Informe/RptVentasGeneral";
                         this.reportViewerReporte.Refresh();
                         //if (Utilitarios.Utilitarios.EventoInfo == 1)
@@ -166,7 +166,7 @@ namespace Proyecto.Presentacion.Formulario
                         break;
                     case 2:
                         this.reportViewerReporte.ProcessingMode = ProcessingMode.Remote;
-                        this.reportViewerReporte.ServerReport.ReportServerUrl = new Uri("http://toshiba-vivi:90/ReportServerVivi");
+                        this.reportViewerReporte.ServerReport.ReportServerUrl = new Uri("http://viviana-murguia:90/ReportServer");
                         this.reportViewerReporte.ServerReport.ReportPath = "/Proyecto.Informe/RptDemandaServicio";
                         this.reportViewerReporte.Refresh();
                         //if (Utilitarios.Utilitarios.EventoInfo == 1)

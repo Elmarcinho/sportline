@@ -101,9 +101,9 @@ namespace Proyecto.Presentacion.Formulario
                 {
                     if ((txtCedulaNit.Text != string.Empty || txtCedulaNit.Text != "") && (txtNombreCliente.Text != string.Empty))
                     {
-                        if (Convert.ToInt64(cbFormaPago.SelectedValue) != 0)
+                        if (Convert.ToInt32(dgvDetallePedidoProducto.Rows.Count) != 0)
                         {
-                            if (Convert.ToInt32(dgvDetallePedidoProducto.Rows.Count) != 0)
+                            if (Convert.ToInt64(cbFormaPago.SelectedValue) != 0)
                             {
                                 RNSolicitud objAuxSolicitud = new RNSolicitud();
                                 if (CargarObjetoSolicitud(ref objAuxSolicitud))
@@ -182,12 +182,13 @@ namespace Proyecto.Presentacion.Formulario
                             }
                             else
                             {
-                                MessageBox.Show("Por favor seleccione al menos un Producto para realizar la solicitud.","Sistema de Ventas",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                                pictBoxVentaPro3.Visible = true;
+                                MessageBox.Show("Favor seleccionar forma de pago.", "Sistema de Ventas",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                             }
                         }
                         else
                         {
-                            MessageBox.Show("Favor seleccionar forma de pago","Sistema de Ventas",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                            MessageBox.Show("Por favor seleccione al menos un Producto para realizar la solicitud.", "Sistema de Ventas",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                         }
                     }
                     else
@@ -627,6 +628,71 @@ namespace Proyecto.Presentacion.Formulario
         private void dgvDetallePedidoProducto_CellMouseLeave(object sender, DataGridViewCellEventArgs e)
         {
             dgvDetallePedidoProducto.Cursor = Cursors.Default;
+        }
+
+        private void groupBox3_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(this.txtCedulaNit.Text))
+                {
+                    pictBoxVentaPro1.BackColor = Color.Red;
+                    this.txtCedulaNit.BackColor = Color.LightYellow;
+                    this.txtCedulaNit.Focus();
+                    pictBoxVentaPro1.Visible = true;
+                }
+                else
+                {
+                    pictBoxVentaPro1.Visible = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void groupBox4_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if ( Convert.ToInt32(dgvDetallePedidoProducto.Rows.Count) == 0)
+                {
+                    pictBoxVentaPro2.BackColor = Color.Red;
+                    pictBoxVentaPro2.Visible = true;
+                }
+                else
+                {
+                    pictBoxVentaPro2.Visible = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void groupBox7_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbFormaPago.Text.Equals("--- Seleccionar ---"))
+                {
+                    pictBoxVentaPro3.BackColor = Color.Red;
+                    pictBoxVentaPro3.Visible = true;
+                }
+                else
+                {
+                    pictBoxVentaPro3.Visible = false;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

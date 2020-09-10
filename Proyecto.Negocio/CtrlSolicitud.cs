@@ -28,6 +28,7 @@ namespace Proyecto.Negocio.RNLista
                 return 1;
             }
         }
+      
         public Boolean InsertarSolicitudCliente(RNSolicitud ObjSolicitud)
         {
             using (TransactionScope Transaccion = new TransactionScope())
@@ -36,7 +37,8 @@ namespace Proyecto.Negocio.RNLista
                 {
                     Solicitud ObjSolicitudCliente = new Solicitud();
                     ObjSolicitudCliente.IdSolicitud = ObjSolicitud.IdSolicitud;
-                    ObjSolicitudCliente.FechaSolicitud = ObjSolicitud.FechaSolicitud;
+                    //ObjSolicitudCliente.FechaSolicitud = ObjSolicitud.FechaSolicitud;
+                    ObjSolicitudCliente.FechaSolicitud = Esquema.Database.SqlQuery<DateTime>("SELECT GETDATE() Fecha").SingleOrDefault().Date;
                     ObjSolicitudCliente.FechaIngreso = ObjSolicitud.FechaIngreso;
                     ObjSolicitudCliente.FechaCulminacion = ObjSolicitud.FechaCulminacion;
                     ObjSolicitudCliente.EstadoSolicitud = ObjSolicitud.EstadoSolicitud;

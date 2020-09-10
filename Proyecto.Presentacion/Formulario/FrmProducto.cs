@@ -188,5 +188,117 @@ namespace Proyecto.Presentacion.Formulario
         {
             objRNValidar.Decimal(e, txtPrecioVentaProducto);
         }
+
+        private void txtNombreProducto_Leave(object sender, EventArgs e)
+        {
+            this.pictureBoxPro1.Visible = false;
+        }
+
+        private void txtNombreProducto_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(this.txtNombreProducto.Text) || txtNombreProducto.Text.Length < 3)
+                {
+                    pictureBoxPro1.BackColor = Color.Red;
+                    this.txtNombreProducto.BackColor = Color.LightYellow;
+                    pictureBoxPro1.Visible = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtPrecioCompraProducto_Leave(object sender, EventArgs e)
+        {
+            this.pictureBoxPro2.Visible = false;
+        }
+
+        private void txtPrecioCompraProducto_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(this.txtPrecioCompraProducto.Text))
+                {
+                    pictureBoxPro2.BackColor = Color.Red;
+                    this.txtPrecioCompraProducto.BackColor = Color.LightYellow;
+                    pictureBoxPro2.Visible = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void txtPrecioVentaProducto_Leave(object sender, EventArgs e)
+        {
+            this.pictureBoxPro3.Visible = false;
+        }
+
+        private void txtPrecioVentaProducto_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(this.txtPrecioVentaProducto.Text))
+                {
+                    pictureBoxPro3.BackColor = Color.Red;
+                    this.txtPrecioVentaProducto.BackColor = Color.LightYellow;
+                    pictureBoxPro3.Visible = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void txtStockProducto_Leave(object sender, EventArgs e)
+        {
+            this.pictureBoxPro4.Visible = false;
+        }
+
+        private void txtStockProducto_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(this.txtStockProducto.Text))
+                {
+                    pictureBoxPro4.BackColor = Color.Red;
+                    this.txtStockProducto.BackColor = Color.LightYellow;
+                    pictureBoxPro4.Visible = true;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void cbCategoriaProducto_Validated(object sender, EventArgs e)
+        {
+            try
+            {
+                if (cbCategoriaProducto.Text.Equals("--- Seleccionar ---"))
+                {
+                    pictureBoxPro5.BackColor = Color.Red;
+                    this.cbCategoriaProducto.BackColor = Color.LightYellow;
+                    pictureBoxPro5.Visible = true;
+                }
+                else { pictureBoxPro5.Visible = false; }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

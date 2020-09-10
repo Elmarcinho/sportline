@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label16 = new System.Windows.Forms.Label();
-            this.txtNombreProducto = new System.Windows.Forms.TextBox();
             this.txtDescripcionProducto = new System.Windows.Forms.TextBox();
             this.cbCategoriaProducto = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -42,6 +41,17 @@
             this.txtPrecioCompraProducto = new System.Windows.Forms.TextBox();
             this.txtStockProducto = new System.Windows.Forms.TextBox();
             this.txtPrecioVentaProducto = new System.Windows.Forms.TextBox();
+            this.pictureBoxPro1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPro2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPro3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxPro4 = new System.Windows.Forms.PictureBox();
+            this.txtNombreProducto = new System.Windows.Forms.TextBox();
+            this.pictureBoxPro5 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPro1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPro2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPro3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPro4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPro5)).BeginInit();
             this.SuspendLayout();
             // 
             // label16
@@ -54,15 +64,6 @@
             this.label16.Size = new System.Drawing.Size(314, 36);
             this.label16.TabIndex = 69;
             this.label16.Text = "Registro de Producto";
-            // 
-            // txtNombreProducto
-            // 
-            this.txtNombreProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombreProducto.Location = new System.Drawing.Point(168, 110);
-            this.txtNombreProducto.Name = "txtNombreProducto";
-            this.txtNombreProducto.Size = new System.Drawing.Size(224, 22);
-            this.txtNombreProducto.TabIndex = 70;
-            this.txtNombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreProducto_KeyPress);
             // 
             // txtDescripcionProducto
             // 
@@ -83,6 +84,7 @@
             this.cbCategoriaProducto.Name = "cbCategoriaProducto";
             this.cbCategoriaProducto.Size = new System.Drawing.Size(198, 24);
             this.cbCategoriaProducto.TabIndex = 73;
+            this.cbCategoriaProducto.Validated += new System.EventHandler(this.cbCategoriaProducto_Validated);
             // 
             // label1
             // 
@@ -164,6 +166,8 @@
             this.txtPrecioCompraProducto.TabIndex = 90;
             this.txtPrecioCompraProducto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPrecioCompraProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioCompraProducto_KeyPress);
+            this.txtPrecioCompraProducto.Leave += new System.EventHandler(this.txtPrecioCompraProducto_Leave);
+            this.txtPrecioCompraProducto.Validated += new System.EventHandler(this.txtPrecioCompraProducto_Validated);
             // 
             // txtStockProducto
             // 
@@ -174,6 +178,8 @@
             this.txtStockProducto.TabIndex = 95;
             this.txtStockProducto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtStockProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtStockProducto_KeyPress);
+            this.txtStockProducto.Leave += new System.EventHandler(this.txtStockProducto_Leave);
+            this.txtStockProducto.Validated += new System.EventHandler(this.txtStockProducto_Validated);
             // 
             // txtPrecioVentaProducto
             // 
@@ -184,6 +190,69 @@
             this.txtPrecioVentaProducto.TabIndex = 97;
             this.txtPrecioVentaProducto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPrecioVentaProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioVentaProducto_KeyPress);
+            this.txtPrecioVentaProducto.Leave += new System.EventHandler(this.txtPrecioVentaProducto_Leave);
+            this.txtPrecioVentaProducto.Validated += new System.EventHandler(this.txtPrecioVentaProducto_Validated);
+            // 
+            // pictureBoxPro1
+            // 
+            this.pictureBoxPro1.BackColor = System.Drawing.Color.Red;
+            this.pictureBoxPro1.Location = new System.Drawing.Point(169, 108);
+            this.pictureBoxPro1.Name = "pictureBoxPro1";
+            this.pictureBoxPro1.Size = new System.Drawing.Size(228, 26);
+            this.pictureBoxPro1.TabIndex = 98;
+            this.pictureBoxPro1.TabStop = false;
+            this.pictureBoxPro1.Visible = false;
+            // 
+            // pictureBoxPro2
+            // 
+            this.pictureBoxPro2.BackColor = System.Drawing.Color.Red;
+            this.pictureBoxPro2.Location = new System.Drawing.Point(166, 205);
+            this.pictureBoxPro2.Name = "pictureBoxPro2";
+            this.pictureBoxPro2.Size = new System.Drawing.Size(104, 26);
+            this.pictureBoxPro2.TabIndex = 99;
+            this.pictureBoxPro2.TabStop = false;
+            this.pictureBoxPro2.Visible = false;
+            // 
+            // pictureBoxPro3
+            // 
+            this.pictureBoxPro3.BackColor = System.Drawing.Color.Red;
+            this.pictureBoxPro3.Location = new System.Drawing.Point(166, 240);
+            this.pictureBoxPro3.Name = "pictureBoxPro3";
+            this.pictureBoxPro3.Size = new System.Drawing.Size(104, 26);
+            this.pictureBoxPro3.TabIndex = 100;
+            this.pictureBoxPro3.TabStop = false;
+            this.pictureBoxPro3.Visible = false;
+            // 
+            // pictureBoxPro4
+            // 
+            this.pictureBoxPro4.BackColor = System.Drawing.Color.Red;
+            this.pictureBoxPro4.Location = new System.Drawing.Point(166, 274);
+            this.pictureBoxPro4.Name = "pictureBoxPro4";
+            this.pictureBoxPro4.Size = new System.Drawing.Size(104, 26);
+            this.pictureBoxPro4.TabIndex = 101;
+            this.pictureBoxPro4.TabStop = false;
+            this.pictureBoxPro4.Visible = false;
+            // 
+            // txtNombreProducto
+            // 
+            this.txtNombreProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombreProducto.Location = new System.Drawing.Point(171, 110);
+            this.txtNombreProducto.Name = "txtNombreProducto";
+            this.txtNombreProducto.Size = new System.Drawing.Size(224, 22);
+            this.txtNombreProducto.TabIndex = 70;
+            this.txtNombreProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreProducto_KeyPress);
+            this.txtNombreProducto.Leave += new System.EventHandler(this.txtNombreProducto_Leave);
+            this.txtNombreProducto.Validated += new System.EventHandler(this.txtNombreProducto_Validated);
+            // 
+            // pictureBoxPro5
+            // 
+            this.pictureBoxPro5.BackColor = System.Drawing.Color.Red;
+            this.pictureBoxPro5.Location = new System.Drawing.Point(166, 309);
+            this.pictureBoxPro5.Name = "pictureBoxPro5";
+            this.pictureBoxPro5.Size = new System.Drawing.Size(202, 28);
+            this.pictureBoxPro5.TabIndex = 102;
+            this.pictureBoxPro5.TabStop = false;
+            this.pictureBoxPro5.Visible = false;
             // 
             // FrmProducto
             // 
@@ -205,6 +274,11 @@
             this.Controls.Add(this.txtDescripcionProducto);
             this.Controls.Add(this.txtNombreProducto);
             this.Controls.Add(this.label16);
+            this.Controls.Add(this.pictureBoxPro1);
+            this.Controls.Add(this.pictureBoxPro2);
+            this.Controls.Add(this.pictureBoxPro3);
+            this.Controls.Add(this.pictureBoxPro4);
+            this.Controls.Add(this.pictureBoxPro5);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -212,6 +286,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Información del Producto";
             this.Load += new System.EventHandler(this.FrmProducto_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPro1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPro2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPro3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPro4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPro5)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,7 +302,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button BtnGuardarProducto;
         private System.Windows.Forms.Label label6;
-        public System.Windows.Forms.TextBox txtNombreProducto;
         public System.Windows.Forms.TextBox txtDescripcionProducto;
         public System.Windows.Forms.ComboBox cbCategoriaProducto;
         private System.Windows.Forms.Label label3;
@@ -232,5 +310,11 @@
         public System.Windows.Forms.TextBox txtStockProducto;
         public System.Windows.Forms.Label label16;
         public System.Windows.Forms.TextBox txtPrecioVentaProducto;
+        private System.Windows.Forms.PictureBox pictureBoxPro1;
+        private System.Windows.Forms.PictureBox pictureBoxPro2;
+        private System.Windows.Forms.PictureBox pictureBoxPro3;
+        private System.Windows.Forms.PictureBox pictureBoxPro4;
+        public System.Windows.Forms.TextBox txtNombreProducto;
+        private System.Windows.Forms.PictureBox pictureBoxPro5;
     }
 }
